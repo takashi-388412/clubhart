@@ -1,3 +1,31 @@
+// ==================================
+// config(初期設定や変数)
+// ==================================
+//560px ~ 960pxまで
+@mixin tb($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+//0 ~ 560pxまで
+  @mixin mq($breakpoint: sm) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+  }
+}
+
+// マップ型変数
+$breakpoints: (
+  'sm': 'screen and (max-width: 560px)',
+  'md': 'screen and (max-width: 960px)',
+) !default;
+
+//メディアクエリーの読み込み方法
+// 0 ~ 960pxのスタイル
+// @include tb() {
+//   display: block;
+// }
+
 /* -------------------------------------------
 * base(全体で共通のスタイル)
 * -------------------------------------------*/
@@ -42,7 +70,44 @@ body {
 /* -------------------------------------------
 * top(header)
 * -------------------------------------------*/
-
+#header {
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  z-index: 5; // 重なり一番上
+}
+#header.m_scroll {
+  background: rgba(0, 0, 0, .65);
+  transition: .5s ease;
+}
+.site-title {
+  float: left; //hamberger-menuとfloat
+  padding-left: 1em;
+  position: relative;
+  height: 100%;
+  font-weight: bold;
+  & a {
+    position: relative; //z-indexを指定したいので,position指定
+    text-decoration: none;
+    color: #fff;
+    width: 50%;
+    font-size: 1.6em;
+    line-height: 1.6em;
+    z-index: 3; //重なり 1番上
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
 /* -------------------------------------------
 * footer
 * -------------------------------------------*/
+.footer {
+  color: #fff;
+  background-color: #000;
+  margin: 3em 0 0;
+  padding: 1.2em 0;
+  text-align: center;
+  font-size: .8em;
+}
