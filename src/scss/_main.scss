@@ -92,6 +92,9 @@ body {
   &-down {
     text-decoration: none;
     color: #fff;
+    &:hover {
+      opacity: 0.5;
+    }
   }
  }
 /* -------------------------------------------
@@ -239,7 +242,54 @@ body {
 .footer {
   color: #fff;
   background-color: #000;
-  padding: 1.2em 0;
-  text-align: center;
-  font-size: .8em;
+  background-image: url(../../src/img/space.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; //背景画像は中央を軸に表示させる
+  
+
+  &-content {
+    padding: 100px;
+  }
+  &-left {
+    float: left;
+
+    & table {
+
+      & tr {
+        font-size: 1.0em;
+        line-height: 1.5em;
+      }
+      & td {
+
+      }
+    }
+  }
+  &-right {
+    float: right;
+  }
+  &-nav {
+    // text-align: right;
+  }
+  &-item {
+    display: inline-block;
+    padding: 0 15px;
+    letter-spacing: 1px;
+    & + .footer-item {
+      border-left: 1px solid #bbb;
+    }
+    & a {
+      color: #bbb;
+      transition: color 0.15s;
+      text-decoration: none;
+      &:hover {
+      border-bottom: 1px dashed #777;
+      color: #ddd;
+      }
+    }
+  }
+  & .copyright {
+    text-align: center;
+    padding: 10px;
+  }
 }
