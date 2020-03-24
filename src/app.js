@@ -14,7 +14,7 @@ $(function () {
 // sticky header
 $(function () {
   jQuery(window).on('scroll', function ($) {
-    if (500 < jQuery(this).scrollTop()) {
+    if (550 < jQuery(this).scrollTop()) {
       jQuery('#header').addClass('m_scroll');
     } else {
       jQuery('#header').removeClass('m_scroll');

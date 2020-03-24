@@ -46,26 +46,27 @@ body {
 * parts
 * -------------------------------------------*/
 .heading {
-  margin: 0 0 2em;
+  // padding: 0 0 2em;
   position: relative;
-  display: inline-block;
+  text-align: center;
+  // display: inline-block;
   font-size: 1.6rem;
   font-weight: bold;
   color: #000;
 
-  &::before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border-bottom: 1px solid #000;
-  }
-  &::after {
-   @extend ::before;
-    bottom: -5px;
-  }
+  // &::before {
+  //   content: '';
+  //   display: inline-block;
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   border-bottom: 1px solid #000;
+  // }
+  // &::after {
+  //  @extend ::before;
+  //   bottom: -5px;
+  // }
 }
 //top-image の背景画像
 .none {
@@ -92,7 +93,7 @@ body {
   }
 }
 #header.m_scroll {
-  background: rgba(0, 0, 0,.65);
+  background: rgba(255, 255, 255,.5);
   transition: .5s ease;
 }
 .site-title {
