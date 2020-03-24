@@ -77,6 +77,23 @@ body {
    display: block;
    clear: both;
  }
+ .btn {
+   display: inline-block;
+   text-decoration: none;
+   padding: 15px;
+   color: #fff;
+   background-color: #8f8f8f;
+   &:hover {
+     opacity: 0.5;
+   }
+ }
+ .scroll {
+   margin-top: 50px;
+  &-down {
+    text-decoration: none;
+    color: #fff;
+  }
+ }
 /* -------------------------------------------
 * top(header)
 * -------------------------------------------*/
