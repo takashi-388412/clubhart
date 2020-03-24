@@ -67,6 +67,15 @@ body {
     bottom: -5px;
   }
 }
+//top-image の背景画像
+.none {
+  display: none;
+}
+.clearfix::after {
+   content: '';
+   display: block;
+   clear: both;
+ }
 /* -------------------------------------------
 * top(header)
 * -------------------------------------------*/

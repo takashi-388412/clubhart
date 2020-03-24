@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Takenn</title>
+  <!-- swiper.js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <!-- stylesheet -->
   <link rel="stylesheet" href="./src/reset.css">
   <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
@@ -36,8 +39,33 @@
     <div id="index">
       <!-- hero -->
       <section class="hero">
-        <!-- <h2 class="heading">TOP</h2> -->
-
+    <!-- Slider main container -->
+      <div class="swiper-container">
+      <!-- Additional required wrapper -->
+        <!-- slider text -->
+        <div class="slider-text">
+          <p class="text">CLUBHART</p>
+        </div>
+        <!-- slider image -->
+        <div class="swiper-wrapper">
+          <!-- Slides1 -->
+          <div class="swiper-slide">
+            <div class="slide-img" style="background-image: url('./src/img/car1.jpg');"></div>
+          </div>
+          <!-- Slides2 -->
+          <div class="swiper-slide">
+            <div class="slide-img" style="background-image: url('./src/img/car2.jpg');"></div>
+          </div>
+          <!-- Slides3 -->
+          <div class="swiper-slide">
+            <div class="slide-img" style="background-image: url('./src/img/car3.jpg');"></div>
+          </div>
+          <!-- Slides4 -->
+          <div class="swiper-slide">
+            <div class="slide-img" style="background-image: url('./src/img/car4.jpg');"></div>
+          </div>
+        </div>
+      </div>
       </section>
       <!-- about -->
       <section class="about">
@@ -71,9 +99,11 @@
     </footer>
   </div>
 
-  <!-- js -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js">
-</script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- swiper.js -->
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<!-- js -->
 <!-- <script src="./src/app.js"></script> -->
 <script src="./dist/js/bundle.js"></script>
 </body>
