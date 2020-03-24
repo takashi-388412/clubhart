@@ -82,25 +82,29 @@ body {
 #header {
   position: fixed;
   width: 100%;
+  height: 60px;
   padding: 10px;
   background: transparent;
   z-index: 5; // 重なり一番上
 }
 #header.m_scroll {
-  background: rgba(0, 0, 0, .65);
+  background: rgba(0, 0, 0,.65);
   transition: .5s ease;
 }
 .site-title {
   float: left; //hamberger-menuとfloat
   padding-left: 1em;
   position: relative;
-  height: 100%;
+  width: 200px;
   font-weight: bold;
+  @include mq () {
+    display: none;
+  }
   & a {
     position: relative; //z-indexを指定したいので,position指定
     text-decoration: none;
     color: #fff;
-    width: 50%;
+    // width: 50%;
     font-size: 1.6em;
     line-height: 1.6em;
     z-index: 3; //重なり 1番上
@@ -108,6 +112,99 @@ body {
       opacity: 0.5;
     }
   }
+}
+.nav {
+  float: right;
+  line-height: 60px;
+  @include mq() {
+  float: initial;
+  position: absolute; 
+  top: 0;
+  // right: -100%; //hambergermenuをクリックするまで、画面外(右)へ隠しておく
+  right: 0%;
+  background: rgba(0, 0, 0, .85);
+  width: 100%;
+  height: 100vh;
+  transition: .5s;
+
+  //navgation_menu用
+  display: table;
+    //ドロワーメニュー 全体cover
+    &.active {
+      transition: .5s;
+      transform: translateX(-100%);
+      z-index: 2; //重なり 2番目
+    }
+  }
+}
+.nav-list {
+  @include mq() {
+  display: table-cell; //.navにdisplay:table;
+  vertical-align: middle; //縦中央寄せ
+  }
+}
+.nav-item {
+    padding: 20px;
+  @include mq() {
+    text-align: center; 
+  }
+  & a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    @include mq() {
+      display: block;
+      width: 100%;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+//hamberger-menu 位置
+.hamberger-menu {
+  @include mq() {
+  float: right; //site-logoとfloat
+  transition: all .4s;
+  box-sizing: border-box;
+  position: relative;
+  width: 40px;
+  height: 32px;
+  z-index: 3; //重なり 1番上
+  //三本レイアウト
+  span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    &:nth-of-type(1) {
+      top: 0px;
+    }
+    &:nth-of-type(2) {
+      top: 14px;
+    }
+    &:nth-of-type(3) {
+      bottom: 0;
+    }
+  }
+  //✖(バッテンレイアウト)
+  &.active span {
+    &:nth-of-type(1) {
+      transform: translateY(12px) rotate(-45deg);
+    }
+    &:nth-of-type(2) {
+      opacity: 0;
+    }
+    &:nth-of-type(3) {
+      transform: translateY(-15px) rotate(45deg);
+    }
+  }
+}
 }
 /* -------------------------------------------
 * footer

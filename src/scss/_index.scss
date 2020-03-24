@@ -17,23 +17,22 @@
       font-weight: bold;
   }
   .slide-img {
-    // background-attachment: fixed; //fixedにすると上手く切り替わらない
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     background-position: center center; //背景画像は中央を軸に表示させる
     height: 100vh;  //全画面表示
-    // //mask
+    // // mask
     // background: url(https://glatchdesign.com/wp-content/uploads/2016/02/mountain0209.jpg) no-repeat center;
   }
   .slide-img::after {
-    // background-color: rgba(0,0,0,0.5); 
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // bottom: 0;
-    // left: 0;
-    // content: '';
+    background-color: rgba(0,0,0,0.2); 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
   }
 }
