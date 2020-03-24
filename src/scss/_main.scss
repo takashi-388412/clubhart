@@ -1,11 +1,44 @@
 /* -------------------------------------------
-* base
+* base(全体で共通のスタイル)
 * -------------------------------------------*/
+html {
 
+}
+body {
+  font-family: 'Montserrat',sans-serif ;
+  letter-spacing: 2px;
+}
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+#wrapper {
+
+}
 /* -------------------------------------------
 * parts
 * -------------------------------------------*/
+.heading {
+  margin: 0 0 2em;
+  position: relative;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #000;
 
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #000;
+  }
+  &::after {
+   @extend ::before;
+    bottom: -5px;
+  }
+}
 /* -------------------------------------------
 * top(header)
 * -------------------------------------------*/
