@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Takenn</title>
+  <title>CLUBHART</title>
+  <!-- swiper.js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <!-- stylesheet -->
   <link rel="stylesheet" href="./src/reset.css">
   <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
@@ -11,22 +14,157 @@
   <!-- wrapper -->
   <div class="wrapper">
     <!-- header -->
-    <header class="header">
+    <header id="header">
+      <div class="clearfix">
+        <!-- title -->
+        <h1 class="site-title"><a href="index.html">CLUB HART</a></h1>
+        <!-- global_nav -->
+        <nav class="nav">
+          <ul class="nav-list">
+            <il class="nav-item"><a href="index.html">HOME</a></il>
+            <il class="nav-item"><a href="pricelist.html">PRICE</a></il>
+            <il class="nav-item"><a href="contact.html">CONTACT</a></il>
+          </ul>
+        </nav>
+      </div>
 
+    <!-- hamberger-menu -->
+      <div class="hamberger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
+
     <!-- index -->
     <div id="index">
+      <!-- hero -->
+      <section class="hero">
+    <!-- Slider main container -->
+      <div class="swiper-container">
+      <!-- Additional required wrapper -->
+        <!-- slider text -->
+        <div class="slider-text">
+          <p class="text">CLUBHART</p>
+        </div>
+        <!-- slider image -->
+        <div class="swiper-wrapper">
+          <!-- Slides1 -->
+          <div class="swiper-slide">
+            <div class="slide-img" style="background-image: url('./src/img/car1.jpg');"></div>
+          </div>
+          <!-- Slides2 -->
+          <div class="swiper-slide">
+            <div class="slide-img" style="background-image: url('./src/img/car2.jpg');"></div>
+          </div>
+          <!-- Slides3 -->
+          <div class="swiper-slide">
+            <div class="slide-img" style="background-image: url('./src/img/car3.jpg');"></div>
+          </div>
+          <!-- Slides4 -->
+          <div class="swiper-slide">
+            <div class="slide-img" style="background-image: url('./src/img/car4.jpg');"></div>
+          </div>
+        </div>
+      </div>
+      </section>
 
+      <!-- content -->
+      <div id="content-wrapper">
+      <!-- about -->
+      <section class="about">
+        <h2 class="heading">OUR COMPANY</h2>
+        <div class="about-content">
+          <div class="about-inner">
+            <img class="about-image" src="src/img/logo.jpg" alt="logo画像">
+            <h3 class="about-description">
+              お車のお悩み何でもご相談下さい。
+            </h3>
+            <p class="about-text">
+              TESTTESTTESTTESTESTTESTTESTTEST<br>
+              TESTTESTTESTTESTESTTESTTESTTEST<br>
+              TESTTESTTESTTESTESTTESTTESTTEST<br>
+              TESTTESTTESTTESTESTTESTTESTTEST<br>
+            </p>
+          </div>
+          <!-- contact-button -->
+          <a class="btn" href="contact.html">CONTACT</a>
+          <!-- scroll-down button -->
+          <div class="scroll">
+            <a class="scroll-down" href="#">scroll-down</a>
+          </div>
+        </div>
+      </section>
+      <!-- serives -->
+      <section class="services">
+        <h2 class="heading">SERVICE</h2>
+
+      </section>
+      <!-- SNS -->
+      <section class="sns">
+        <h2 class="none">SNS</h2>
+
+      </section>
+
+    </div>
     </div>
     <!-- footer -->
     <footer class="footer">
-
+      <div class="footer-content clearfix">
+          <!-- 背景画像 透過 -->
+        <div class="footer-mask">
+          <div class="footer-left">
+          <table>
+            <!-- 店舗名 -->
+            <tr>
+              <td>会社名:</td>
+              <td>株式会社FREE</td>
+            </tr>
+            <tr>
+              <td>店舗名：</td>
+              <td>CLUB HART</td>
+            </tr>
+            <tr>
+              <td>設立日：</td>
+              <td>2012年9月11日</td>
+            </tr>
+            <!-- 電話番号 -->
+            <tr>
+              <td>Tel:</td>
+              <td>0154-64-9555</td>
+            </tr>
+            <tr>
+            <!-- 所在地 -->
+            <tr>
+              <td>所在地:</td>
+              <td>北海道釧路市星が浦大通３丁目２番６号</td>
+            </tr>
+            <!-- 代表 -->
+            <tr>
+              <td>代表取締役:</td>
+              <td>大野 寛将</td>
+            </tr>
+          </table>
+        </div>
+        <!-- footer-nav -->
+        <div class="footer-right">
+          <ul class="footer-nav">
+            <li class="footer-item"><a href="#">HOME</a></li>
+            <li class="footer-item"><a href="#">PRICE</a></li>
+            <li class="footer-item"><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <!-- copyright -->
+      <p class="copyright">copyright</p>
     </footer>
-  </div>
 
-  <!-- js -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js">
-</script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- swiper.js -->
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<!-- js -->
 <!-- <script src="./src/app.js"></script> -->
 <script src="./dist/js/bundle.js"></script>
 </body>

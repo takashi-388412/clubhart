@@ -1,3 +1,31 @@
+// ==================================
+// config(初期設定や変数)
+// ==================================
+//560px ~ 960pxまで
+@mixin tb($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+//0 ~ 560pxまで
+  @mixin mq($breakpoint: sm) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+  }
+}
+
+// マップ型変数
+$breakpoints: (
+  'sm': 'screen and (max-width: 560px)',
+  'md': 'screen and (max-width: 960px)',
+) !default;
+
+//メディアクエリーの読み込み方法
+// 0 ~ 960pxのスタイル
+// @include tb() {
+//   display: block;
+// }
+
 /* -------------------------------------------
 * base(全体で共通のスタイル)
 * -------------------------------------------*/
@@ -18,31 +46,256 @@ body {
 * parts
 * -------------------------------------------*/
 .heading {
-  margin: 0 0 2em;
+  // padding: 0 0 2em;
   position: relative;
-  display: inline-block;
+  text-align: center;
+  // display: inline-block;
   font-size: 1.6rem;
   font-weight: bold;
   color: #000;
 
-  &::before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border-bottom: 1px solid #000;
-  }
-  &::after {
-   @extend ::before;
-    bottom: -5px;
-  }
+  // &::before {
+  //   content: '';
+  //   display: inline-block;
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   border-bottom: 1px solid #000;
+  // }
+  // &::after {
+  //  @extend ::before;
+  //   bottom: -5px;
+  // }
 }
+//top-image の背景画像
+.none {
+  display: none;
+}
+.clearfix::after {
+   content: '';
+   display: block;
+   clear: both;
+ }
+ .btn {
+   display: inline-block;
+   text-decoration: none;
+   padding: 15px;
+   color: #fff;
+   background-color: #8f8f8f;
+   &:hover {
+     opacity: 0.5;
+   }
+ }
+ .scroll {
+   margin-top: 50px;
+  &-down {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+ }
 /* -------------------------------------------
 * top(header)
 * -------------------------------------------*/
+#header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+  background: transparent;
+  // background: rgba(0, 0, 0,.65);
+  z-index: 5; // 重なり一番上
+  @include mq() {
+    // background: initial;
+  }
+}
+#header.m_scroll {
+  background: rgba(255, 255, 255,.5);
+  transition: .5s ease;
+}
+.site-title {
+  float: left; //hamberger-menuとfloat
+  padding-left: 1em;
+  position: relative;
+  width: 200px;
+  line-height: 60px;
+  font-weight: bold;
+  @include mq () {
+    display: none;
+  }
+  & a {
+    position: relative; //z-indexを指定したいので,position指定
+    text-decoration: none;
+    color: #fff;
+    // width: 50%;
+    font-size: 1.6em;
+    line-height: 1.6em;
+    z-index: 3; //重なり 1番上
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+.nav {
+  float: right;
+  line-height: 60px;
+  @include mq() {
+  float: initial;
+  position: absolute; 
+  top: 0;
+  right: -100%; //hambergermenuをクリックするまで、画面外(右)へ隠しておく
+  // right: 0%;
+  background: rgba(0, 0, 0, .85);
+  width: 100%;
+  height: 100vh;
+  transition: .5s;
 
+  //navgation_menu用
+  display: table;
+    //ドロワーメニュー 全体cover
+    &.active {
+      transition: .5s;
+      transform: translateX(-100%);
+      z-index: 2; //重なり 2番目
+    }
+  }
+}
+.nav-list {
+  @include mq() {
+  display: table-cell; //.navにdisplay:table;
+  vertical-align: middle; //縦中央寄せ
+  }
+}
+.nav-item {
+    padding: 20px;
+  @include mq() {
+    text-align: center; 
+  }
+  & a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    @include mq() {
+      display: block;
+      width: 100%;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+//hamberger-menu 位置
+.hamberger-menu {
+  @include mq() {
+  margin-top: 10px;
+  float: right; //site-logoとfloat
+  transition: all .4s;
+  box-sizing: border-box;
+  position: relative;
+  width: 40px;
+  height: 32px;
+  z-index: 3; //重なり 1番上
+  //三本レイアウト
+  span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    // background-color: #000;
+    border-radius: 4px;
+    &:nth-of-type(1) {
+      top: 0px;
+    }
+    &:nth-of-type(2) {
+      top: 14px;
+    }
+    &:nth-of-type(3) {
+      bottom: 0;
+    }
+  }
+  //✖(バッテンレイアウト)
+  &.active span {
+    &:nth-of-type(1) {
+      transform: translateY(12px) rotate(-45deg);
+      background-color: #fff;
+    }
+    &:nth-of-type(2) {
+      opacity: 0;
+    }
+    &:nth-of-type(3) {
+      transform: translateY(-15px) rotate(45deg);
+      background-color: #fff;
+    }
+  }
+}
+}
 /* -------------------------------------------
 * footer
 * -------------------------------------------*/
+.footer {
+    background-color: #000;
+    color: #fff;
+
+  &-content {
+    color: #bbb;
+    height: 300px;
+    background-image: url(../../src/img/building.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; //背景画像は中央を軸に表示させる
+  }
+  &-mask {
+    background:rgba(0,0,0,0.7);
+    padding: 100px;
+    height: 300px;
+  }
+  &-left {
+    float: left;
+
+    & table {
+
+      & tr {
+        font-size: 1.0em;
+        line-height: 1.5em;
+      }
+      & td {
+
+      }
+    }
+  }
+  &-right {
+    float: right;
+  }
+  &-nav {
+    // text-align: right;
+  }
+  &-item {
+    display: inline-block;
+    padding: 0 15px;
+    letter-spacing: 1px;
+    & + .footer-item {
+      border-left: 1px solid #bbb;
+    }
+    & a {
+      color: #bbb;
+      transition: color 0.15s;
+      text-decoration: none;
+      &:hover {
+      border-bottom: 1px dashed #777;
+      color: #ddd;
+      }
+    }
+  }
+  & .copyright {
+    text-align: center;
+    padding: 10px;
+    color: #bbb;
+  }
+}
