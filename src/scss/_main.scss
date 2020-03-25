@@ -258,18 +258,21 @@ body {
     background:rgba(0,0,0,0.7);
     padding-top: 50px;
     height: 300px;
-    @include mq() {
-      padding: 0;
-    }
   }
   &-left {
     float: left;
+    @include mq() {
+      float: initial;
+    }
 
     & table {
 
       & tr {
         font-size: 1.0em;
         line-height: 1.5em;
+        @include mq() {
+          font-size: 0.8em;
+        }
       }
       & td {
 
@@ -278,6 +281,9 @@ body {
   }
   &-right {
     float: right;
+    @include mq() {
+      float: initial;
+    }
   }
   &-nav {
     // text-align: right;
@@ -286,8 +292,16 @@ body {
     display: inline-block;
     padding: 0 15px;
     letter-spacing: 1px;
+    @include mq() {
+      display: block;
+      text-align: center;
+      padding: 10px;
+    }
     & + .footer-item {
       border-left: 1px solid #bbb;
+    @include mq() {
+      border-left: none;
+    }
     }
     & a {
       color: #bbb;
