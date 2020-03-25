@@ -50,7 +50,7 @@ body {
   position: relative;
   text-align: center;
   // display: inline-block;
-  font-size: 1.6rem;
+  font-size: 2.0em;
   font-weight: bold;
   color: #000;
 
@@ -115,6 +115,9 @@ body {
 #header.m_scroll {
   background: rgba(255, 255, 255,.5);
   transition: .5s ease;
+  @include mq() {
+    background: transparent;
+  }
 }
 .site-title {
   float: left; //hamberger-menuとfloat
