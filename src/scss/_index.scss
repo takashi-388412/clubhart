@@ -57,7 +57,7 @@
 // ABOUT
 // ==================================
 .about {
-  margin-bottom: 80px;
+  padding-top: 80px;
 
   &-content {
     width: 100%;
@@ -65,7 +65,10 @@
   }
   &-inner {
     width: 50%;
-    margin: 50px auto 0px;
+    margin: 50px auto 0;
+    @include mq() {
+    width: 100%;
+    }
   }
   &-image {
     display: inline-block;
@@ -89,6 +92,7 @@
 // SERVICE
 // ==================================
 .service {
+  padding-top: 80px;
 
   &-content {
 
@@ -237,13 +241,34 @@
 .sns {
   &-content {
     padding: 100px 80px;
+    @include mq() {
+      padding: 0;
+      padding: 80px 0;
+    }
   }
   &-inner {
-    text-align: center;
     border: 1px solid #fff;
+    @include mq() {
+      border: none;
+    }
+  }
+  .iframe-center{
+    text-align: center;
+    @include mq() {
+  
+    }
+    iframe {
+      width: 340px;
+      height: 500px;
+      @include mq() {
+        width: 100%;
+      }
+    }
   }
   &-title {
     margin: 15px;
+    text-align: center;
+    }
   }
   &-left {
     // float: left;
@@ -253,6 +278,4 @@
   //   float: right;
   //   width: 50%;
   // }
-}
-
 }
