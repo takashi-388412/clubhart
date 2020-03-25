@@ -256,8 +256,11 @@ body {
   }
   &-mask {
     background:rgba(0,0,0,0.7);
-    padding: 100px;
+    padding-top: 50px;
     height: 300px;
+    @include mq() {
+      padding: 0;
+    }
   }
   &-left {
     float: left;
