@@ -9,11 +9,13 @@
 #content-wrapper {
   padding: 100px 80px;
   width: 100%;
-	height: 100vh;
 	background: #000;
   background-image: linear-gradient(90deg, rgba(255,255,255,0.25) 1px, transparent 0),
                     linear-gradient(rgba(255,255,255,0.25) 1px, transparent 0);
-	background-size: 100px 1000px;
+  background-size: 100px 1000px;
+  @include mq() {
+    padding: 0;
+  }
 }
 .heading {
   color: #fff;
@@ -63,7 +65,7 @@
   }
   &-inner {
     width: 50%;
-    margin: 50px auto;
+    margin: 50px auto 0px;
   }
   &-image {
     display: inline-block;
@@ -71,6 +73,7 @@
     height: auto;
     border-radius: 50%;
     margin-bottom: 50px;
+    opacity: 0.8;
   }
   &-description {
     margin-bottom: 10px;
@@ -87,12 +90,169 @@
 // ==================================
 .service {
 
+  &-content {
+
+   }
+   &-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    @include mq() {
+      display: block;
+    }
+   }
+  &-item {
+    height: 300px;
+    width: 50%;
+    @include mq() {
+      width: 100%;
+    }
+    &:nth-child(n+3) {
+    width: 33.33333%;
+    @include mq() {
+      width: 100%;
+    }
+    }
+  //   & a {
+  //     display: block;
+  //     text-decoration: none;
+  //     color: #fff;
+  //     //要素全体にリンクを貼る
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     height:100%;
+  //     width: 100%;
+  //  }
+  }
 }
+.service-item {
+  font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 70%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, ffffff 70%);
+}
+.service-item * {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.service-item img {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+}
+.service-item img:nth-child(n){
+  opacity: 0.7;
+}
+.service-item img:nth-child(n+3){
+  // 3~5枚目は通常の透過
+  opacity: 1;
+}
+.service-item:hover img,
+.service-item.hover img {
+  opacity: 0.5;
+  // -moz-transform: scale(1.2);
+  // -webkit-transform: scale(1.2);
+  // -ms-transform: scale(1.2);
+  // transform: scale(1.2);//caption
+}
+.service-item figcaption {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.service-item h2 {
+  margin: 0;
+  width: 100%;
+  // padding: 10px 20px 10px 20px;
+  padding: 20px;
+}
+.service-item p {
+  margin: 0;
+  width: 100%;
+  padding: 5px 20px 10px 20px;
+}
+.service-item h2 {
+  color: #0A79E8;
+  text-align: center;
+  position: absolute;
+  bottom: 100%;
+  display: block;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 16px;
+  // background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0,0.7);
+}
+.service-item p {
+  // background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0,0.7);
+  // text-align: left;
+  text-align: center;
+  bottom: 0;
+  font-size: 13px;
+  font-weight: 100;
+  // color: #555;
+  color: #fff;
+}
+.service-item a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+.service-item:hover figcaption,
+.service-item:hover figcaption {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+
 // ==================================
 // SNS
 // ==================================
 .sns {
-
+  &-content {
+    padding: 100px 80px;
+  }
+  &-inner {
+    text-align: center;
+    border: 1px solid #fff;
+  }
+  &-title {
+    margin: 15px;
+  }
+  &-left {
+    // float: left;
+    width: 100%;
+  }
+  // &-right {
+  //   float: right;
+  //   width: 50%;
+  // }
 }
 
 }
