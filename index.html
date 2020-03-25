@@ -72,7 +72,7 @@
       <!-- content -->
       <div id="content-wrapper">
       <!-- about -->
-      <section class="about">
+      <section class="about fade-up">
         <h2 class="heading">OUR COMPANY</h2>
         <div class="about-content">
           <div class="about-inner">
@@ -96,7 +96,7 @@
         </div>
       </section>
       <!-- serives -->
-      <section class="service">
+      <section class="service fade-up">
         <h2 class="heading">SERVICE</h2>
         <div class="service-content">
           <div class="service-inner">
@@ -224,6 +224,23 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <!-- swiper.js -->
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<!-- section fadein -->
+<script>
+$(function() {
+　$(window).scroll(function (){
+    $('.fade-up').each(function(){
+        var elemPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+      if (scroll > elemPos - windowHeight + windowHeight/2){
+          $(this).addClass('effect-scroll');
+      } else {
+        $(this).removeClass('effect-scroll');
+      }
+    });
+  });
+});
+</script>
 <!-- js -->
 <!-- <script src="./src/app.js"></script> -->
 <script src="./dist/js/bundle.js"></script>
