@@ -34,6 +34,7 @@
     &-form {
       height: 100%;
       input[type=text],
+      input[type=email],
       textarea,
       input[type=submit] {
         margin: 0 0 1em;
@@ -45,13 +46,18 @@
         height: 2em;
         width: 15em;
       }
+      input[type=email] {
+        height: 2em;
+        width: 15em;
+      }
       textarea {
         width: 100%;
-        height: 16em;
+        height: 15em;
       }
       input[type=submit] {
-        width: 5em;
-        height: 2em;
+        margin: 0 0 0 .5em;
+        width: 6em;
+        height: 3em;
         float: right;
         cursor: pointer;
       }
