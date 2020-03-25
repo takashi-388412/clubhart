@@ -240,16 +240,21 @@ body {
 * footer
 * -------------------------------------------*/
 .footer {
-  color: #fff;
-  background-color: #000;
-  background-image: url(../../src/img/space.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; //背景画像は中央を軸に表示させる
-  
+    background-color: #000;
+    color: #fff;
 
   &-content {
+    color: #bbb;
+    height: 300px;
+    background-image: url(../../src/img/building.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; //背景画像は中央を軸に表示させる
+  }
+  &-mask {
+    background:rgba(0,0,0,0.7);
     padding: 100px;
+    height: 300px;
   }
   &-left {
     float: left;
@@ -291,5 +296,6 @@ body {
   & .copyright {
     text-align: center;
     padding: 10px;
+    color: #bbb;
   }
 }
