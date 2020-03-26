@@ -82,10 +82,10 @@
               お車のお悩み何でもご相談下さい。
             </h3>
             <p class="about-text">
-              TESTTESTTESTTEST<br>
-              TESTTESTTESTTEST<br>
-              TESTTESTTESTTEST<br>
-              TESTTESTTESTTEST<br>
+              この文章はダミーです!!<br>
+              この文章はダミーです!!<br>
+              この文章はダミーです!!<br>
+              この文章はダミーです!!<br>
             </p>
           </div>
           <!-- contact-button -->
@@ -166,9 +166,12 @@
           </div>
         </div>
       </section>
-
+  <!-- scroll-top -->
+    <div class="scroll">
+        <a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
     </div>
-    </div>
+   </div>
+  </div>
     <!-- footer -->
     <footer class="footer">
       <div class="footer-content clearfix">
@@ -225,23 +228,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <!-- swiper.js -->
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<!-- section fadein -->
-<script>
-$(function() {
-　$(window).scroll(function (){
-    $('.fade-up').each(function(){
-        var elemPos = $(this).offset().top;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-      if (scroll > elemPos - windowHeight + windowHeight/2){
-          $(this).addClass('effect-scroll');
-      } else {
-        $(this).removeClass('effect-scroll');
-      }
-    });
-  });
-});
-</script>
 <!-- js -->
 <!-- <script src="./src/app.js"></script> -->
 <script src="./dist/js/bundle.js"></script>

@@ -89,6 +89,17 @@ body {
  }
  .scroll {
    margin-top: 50px;
+    text-align: center;
+   &-top {
+    display: inline-block;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.20);
+      transform: translateY(-4px);
+    }
+   }
   &-down {
     text-decoration: none;
     color: #fff;
