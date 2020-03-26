@@ -113,9 +113,13 @@
     }
     &:nth-child(n+3) {
     width: 33.33333%;
+    width: 50%;
     @include mq() {
       width: 100%;
     }
+  }
+    &:nth-child(n+5) {
+      width: 100%;
     }
   //   & a {
   //     display: block;
