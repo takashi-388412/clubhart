@@ -98,8 +98,8 @@
 
    }
    &-inner {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;//画像横並び
+    flex-wrap: wrap;//
     margin-top: 50px;
     @include mq() {
       display: block;
@@ -113,9 +113,13 @@
     }
     &:nth-child(n+3) {
     width: 33.33333%;
+    width: 50%;
     @include mq() {
       width: 100%;
     }
+  }
+    &:nth-child(n+5) {
+      width: 100%;
     }
   //   & a {
   //     display: block;
@@ -139,8 +143,8 @@
   background-image: linear-gradient(to bottom, #ffffff 0%, ffffff 70%);
 }
 .service-item * {
-  -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
 }
 .service-item img {
     width: auto;
@@ -160,11 +164,11 @@
     -ms-transition: all .3s ease-out;
 }
 .service-item img:nth-child(n){
-  opacity: 0.7;
+  // opacity: 0.7;
 }
 .service-item img:nth-child(n+3){
   // 3~5枚目は通常の透過
-  opacity: 1;
+  // opacity: 1;
 }
 .service-item:hover img,
 .service-item.hover img {
@@ -225,9 +229,6 @@
   position: absolute;
   z-index: 1;
 }
-
-
-
 .service-item:hover figcaption,
 .service-item:hover figcaption {
   -webkit-transform: translateY(0);
