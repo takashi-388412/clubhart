@@ -1,53 +1,1311 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="ja"> -->
+<!-- <head> -->
+  <!-- <meta charset="UTF-8"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- <title>pricelist</title> -->
+  <!-- <link rel="stylesheet" href="./src/reset.css"> -->
+  <!-- <link rel="stylesheet" href="./dist/css/style.min.css"> -->
+<!-- </head> -->
+<!-- <body> -->
+  <!-- wrapper -->
+  <!-- <div class="wrapper"> -->
+    <!-- header -->
+    <!-- <header class="header"> -->
+
+    <!-- </header> -->
+
+    <!-- footer -->
+    <!-- <footer class="footer"> -->
+
+    <!-- </footer> -->
+  <!-- </div> -->
+
+  <!-- js -->
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"> -->
+<!-- </script> -->
+<!-- <script src="./src/app.js"></script> -->
+<!-- <script src="./dist/js/bundle.js"></script> -->
+<!-- </body> -->
+<!-- </html> -->
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>pricelist</title>
-  <link rel="stylesheet" href="./src/reset.css">
-  <link rel="stylesheet" href="./dist/css/style.min.css">
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+            new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K9F8MCG');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="https://spashan.jp/wp-content/themes/spashan/css/reset.css" media="all">
+    <link rel="stylesheet" href="https://spashan.jp/wp-content/themes/spashan/style.css" type="text/css" media="screen and (min-width: 751px)"/>
+    <link rel="stylesheet" type="text/css" href="https://spashan.jp/wp-content/themes/spashan/qubic.css" media="screen and (min-width: 751px)">
+    <link rel="stylesheet" type="text/css" href="https://spashan.jp/wp-content/themes/spashan/sp.css" media="screen and (max-width: 750px)">
+    <link rel="stylesheet" href="https://spashan.jp/wp-content/themes/spashan/css/fontawesome-all.min.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://spashan.jp/wp-content/themes/spashan/js/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://spashan.jp/wp-content/themes/spashan/js/myscript.js"></script>
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://spashan.jp/js/parallax.min.js"></script>
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+    $(function() {
+        $('.store_slider').bxSlider({
+            // mode: 'fade',
+            // captions: true,
+            // slideWidth: 600,
+            pagerType: 'short',
+            nextText: '',
+            prevText: '',
+            nextSelector: '.next-btn',
+            prevSelector: '.prev-btn',
+        });
+    });
+    $(function() {
+        $('.store_slider2').bxSlider({
+            pagerType: 'short',
+            nextText: '',
+            prevText: '',
+            nextSelector: '.next-btn2',
+            prevSelector: '.prev-btn2',
+        });
+    });
+    </script>
+
+    <title>マスターショップ | 【公式】スパシャン</title>
+
+    <!-- All in One SEO Pack 2.9.1 by Michael Torbert of Semper Fi Web Design[2959,2986] -->
+    <link rel="canonical" href="https://spashan.jp/mastershop/"/>
+    <!-- /all in one seo pack -->
+    <link rel='dns-prefetch' href='//s.w.org'/>
+    <script type="text/javascript">
+    window._wpemojiSettings = {
+        "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/",
+        "ext": ".png",
+        "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/",
+        "svgExt": ".svg",
+        "source": {
+            "concatemoji": "https:\/\/spashan.jp\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.13"
+        }
+    };
+    !function(a, b, c) {
+        function d(a, b) {
+            var c = String.fromCharCode;
+            l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0);
+            var d = k.toDataURL();
+            l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0);
+            var e = k.toDataURL();
+            return d === e
+        }
+        function e(a) {
+            var b;
+            if (!l || !l.fillText)
+                return !1;
+            switch (l.textBaseline = "top", l.font = "600 32px Arial", a) {
+            case "flag":
+                return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b);
+            case "emoji":
+                return b = d([55358, 56760, 9792, 65039], [55358, 56760, 8203, 9792, 65039]), !b
+            }
+            return !1
+        }
+        function f(a) {
+            var c = b.createElement("script");
+            c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+        }
+        var g,
+            h,
+            i,
+            j,
+            k = b.createElement("canvas"),
+            l = k.getContext && k.getContext("2d");
+        for (j = Array("flag", "emoji"), c.supports = {
+            everything: !0,
+            everythingExceptFlag: !0
+        }, i = 0; i < j.length; i++)
+            c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]);
+        c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() {
+            c.DOMReady = !0
+        }, c.supports.everything || (h = function() {
+            c.readyCallback()
+        }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function() {
+            "complete" === b.readyState && c.readyCallback()
+        })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
+    }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+    img.wp-smiley, img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 .07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+    }
+    </style>
+    <link rel='stylesheet' id='contact-form-7-css' href='https://spashan.jp/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.5' type='text/css' media='all'/>
+    <script type='text/javascript' src='https://spashan.jp/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+    <script type='text/javascript' src='https://spashan.jp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <link rel='https://api.w.org/' href='https://spashan.jp/wp-json/'/>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://spashan.jp/xmlrpc.php?rsd"/>
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://spashan.jp/wp-includes/wlwmanifest.xml"/>
+    <meta name="generator" content="WordPress 4.9.13"/>
+    <link rel='shortlink' href='https://spashan.jp/?p=710'/>
+    <link rel="alternate" type="application/json+oembed" href="https://spashan.jp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fspashan.jp%2Fmastershop%2F"/>
+    <link rel="alternate" type="text/xml+oembed" href="https://spashan.jp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fspashan.jp%2Fmastershop%2F&#038;format=xml"/>
 </head>
-<body>
-  <!-- wrapper -->
-  <div class="wrapper">
-    <!-- header -->
-    <header class="header">
 
-    </header>
+<body class="drawer drawer--right">
+    <div class="sp_only">
+        <header role="banner">
+            <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+            </button>
+            <nav class="drawer-nav" role="navigation">
+                <div class="inner">
 
-     <div id="pricelist">
-      <!-- content1 -->
-      <!-- <div class="scrollbox">スクロールコンテンツ１</div> -->
-      <div class="parallax-bg img-bg-01"></div>
-      <!-- content2 -->
-      <div class="scrollbox">
-         <h2 class="heading">TEST</h3>
-      </div>
-      <div class="parallax-bg img-bg-02">
-        <h2 class="heading">TEST</h3>
-      </div>
-      <!-- content3 -->
-      <div class="scrollbox">
-        <h2 class="heading">TEST</h3>
-      </div>
-      <div class="parallax-bg img-bg-03"></div>
-      <!-- content4 -->
-      <div class="scrollbox">
-        <h2 class="heading">TEST</h3>
-      </div>
-      <div class="parallax-bg img-bg-04"></div>
-     </div>
-    <!-- footer -->
-    <footer class="footer">
+                    <ul class="drawer-menu">
+                        <li>
+                            <a href="https://spashan.jp">HOME</a>
+                        </li>
+                        <li>
+                            <a href="https://spashan.jp/products">CATALOG</a>
+                        </li>
+                        <li>
+                            <a href="https://spashan.jp/mastershop">MASTER SHOP</a>
+                        </li>
+                        <li>
+                            <a href="https://spashan.jp/infomation">INFOMATION</a>
+                        </li>
+                        <li>
+                            <a href="https://spashan.jp/category/blog/">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="https://spashan.jp/company">COMPANY</a>
+                        </li>
+                        <li>
+                            <a href="https://spashan.jp/contact">CONTACT</a>
+                        </li>
+                        <!-- <li class="sp_only change first"><a href="">English</a></li> -->
+                        <!-- <li class="sp_only change"><a href="">Chinese</a></li> -->
+                        <!--                   <li class="drawer-dropdown">
+                                            <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">SERVICE<span class="drawer-caret"></span>
+                                            </a>
+                                            <ul class="drawer-dropdown-menu">
+                                                <li><a class="drawer-dropdown-menu-item" href="">aaa</a></li>
+                                                <li><a class="drawer-dropdown-menu-item" href="">bbb</a></li>
+                                                <li><a class="drawer-dropdown-menu-item" href="">ccc</a></li>
+                                            </ul>
+                                          </li> -->
+                    </ul>
+                    <!-- <a href="tel:06-1234-1234" class="sp_menu_btn"><i class="fal fa-mobile-android-alt"></i>06-1234-1234</a> -->
 
-    </footer>
-  </div>
+                    <div class="lan_switch">
+                        <a href="https://spashan.jp/en/">ENGLISH</a>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <script>
+        $(document).ready(function() {
+            $('.drawer').drawer();
+        });
+        </script>
+    </div>
+    <!-- .sp_only -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9F8MCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="wrapper_header sub_header">
+        <div class="header">
+            <div class="logo_area">
+                <a href="https://spashan.jp">
+                    <img src="https://spashan.jp/wp-content/themes/spashan/images/spashan_logo.png" alt="">
+                </a>
+            </div>
+            <!-- .logo_area -->
+            <div class="menu_area">
+                <ul>
+                    <li>
+                        <a href="https://spashan.jp">HOME</a>
+                    </li>
+                    <li>
+                        <a href="https://spashan.jp/products">CATALOG</a>
+                    </li>
+                    <li>
+                        <a href="https://spashan.jp/mastershop">MASTER SHOP</a>
+                    </li>
+                    <li>
+                        <a href="https://spashan.jp/company">COMPANY</a>
+                    </li>
+                    <li>
+                        <a href="https://spashan.jp/contact">CONTACT</a>
+                    </li>
+                    <!-- <li class="sp_only change first"><a href="">English</a></li> -->
+                    <!-- <li class="sp_only change"><a href="">Chinese</a></li> -->
+                </ul>
+            </div>
+            <!-- .header -->
+        </div>
+        <!-- .menu_area -->
+
+        <!--        <div class="lan_switch pc_only">
+                        <a href="https://spashan.jp/en/">ENGLISH</a>
+                      </div> -->
+
+    </div>
+    <!-- .wrapper_header -->
+
+    <!-- pタグ自動挿入制限 start-->
+    <!-- pタグ自動挿入制限 stop -->
+
+    <div class="wrapper_mv_sub">
+        <img src="https://spashan.jp/wp-content/themes/spashan/images/mv_sub_01.jpg" alt="">
+        <h2>MASTERSHOP</h2>
+        <h3>マスターショップ</h3>
+    </div>
+    <!-- .wrapper_mv_sub -->
+
+    <div class="wrapper_pankuzu">
+        <div class="pankuzu">
+            <ul>
+                <li>
+                    <a href="https://spashan.jp">HOME</a>
+                </li>
+                <li>マスターショップ</li>
+            </ul>
+        </div>
+        <!-- .pankuzu -->
+    </div>
+    <!-- .wrapper_pankuzu -->
+
+    <div class="wrapper_content">
+        <div class="content sub_width">
+            <h2>
+                MasterShop FIVE Points
+                <span class="store_span">マスターショップの5つのポイント</span>
+            </h2>
+
+            <div class="section">
+
+                <script>
+                $(function() {
+                    $('.bxslider').bxSlider({
+                        mode: 'fade',
+                        auto: true,
+                        pager: false,
+                        controls: false,
+                    });
+                });
+                </script>
+                <div class="wrapper_master3">
+                    <div class="inner_mv">
+                        <ul class="bxslider">
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/01.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/02.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/06.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/48966045_508813546277004_6903308708751605760_n-1.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/08.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/09.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/11.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/14.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/15-1.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/16.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/17.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/18.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/19.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/20.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/21-1.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/22.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/23.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/24.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/26.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/27.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/28.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/29.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/30.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/31.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/32.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/33.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/34.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .inner_mv -->
+                    <div class="inner_text">
+                        <h5>プロスタッフ研修</h5>
+                        <p>マスターショップでは定期的に社内スタッフや正規代理店様、プロショップ様などに向けた講習や研修を行っており「SPASHAN」ブランドとしての技術の底上げに注力しております。</p>
+                    </div>
+                    <!-- .inner_text -->
+
+                </div>
+                <!-- .wrapper_master3 -->
+                <div class="wrapper_master2 fadein">
+                    <div class="inner_mv">
+                        <div class="image">
+                            <img src="https://spashan.jp/wp-content/uploads/2018/12/01-1.jpg">
+                        </div>
+                        <div class="image">
+                            <img src="https://spashan.jp/wp-content/uploads/2018/12/02-1.jpg">
+                        </div>
+                    </div>
+                    <!-- .inner_mv -->
+                    <div class="inner_text">
+                        <h5>鏡面磨き</h5>
+                        <p>肌調整と呼ばれるプロの目でも難しいとされる技術で、まさにうねりなく、鏡のような映り込みのボディへと磨き上げる技術。</p>
+
+                    </div>
+                    <!-- .inner_text -->
+
+                </div>
+                <!-- .wrapper_master2 -->
+                <div class="wrapper_master2 fadein">
+                    <div class="inner_mv">
+                        <div class="image">
+                            <img src="https://spashan.jp/wp-content/uploads/2018/12/01-2.jpg">
+                        </div>
+                        <div class="image">
+                            <img src="https://spashan.jp/wp-content/uploads/2018/12/02-2.jpg">
+                        </div>
+                    </div>
+                    <!-- .inner_mv -->
+                    <div class="inner_text">
+                        <h5>内装リペア</h5>
+                        <p>デリケートなスーパーカーやクラシックカーの本革シートやハンドル、ダッシュボード等の内装の修復を行えるスタッフが在籍しております。</p>
+
+                    </div>
+                    <!-- .inner_text -->
+
+                </div>
+                <!-- .wrapper_master2 -->
+                <div class="wrapper_master3 fadein">
+                    <div class="inner_mv">
+                        <ul class="bxslider">
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/01-3.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/02-3.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/03.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .inner_mv -->
+                    <div class="inner_text">
+                        <h5>THRONEブランド取扱</h5>
+                        <p>SPASHANがプロ専用に送り出すTHRONEブランドを取り扱っております。</p>
+
+                    </div>
+                    <!-- .inner_text -->
+
+                </div>
+                <!-- .wrapper_master -->
+                <div class="wrapper_master3 fadein">
+                    <div class="inner_mv">
+                        <ul class="bxslider">
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/01-4.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/02-4.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .inner_mv -->
+                    <div class="inner_text">
+                        <h5>限定商品の販売</h5>
+                        <p>その他、マスターショップ限定商品、新製品の先行販売など、マスターショップでしか得られない情報も満載です。</p>
+
+                    </div>
+                    <!-- .inner_text -->
+
+                </div>
+                <!-- .wrapper_master3 -->
+
+            </div>
+            <!-- .section -->
+            <div class="section">
+                <h2>
+                    Service
+                    <span>サービス</span>
+                </h2>
+
+                <div class="service_image">
+                    <div class="inner_mv">
+                        <ul class="bxslider">
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/01-5.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/02-5.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/03-1.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/05.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/06-1.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/10-1.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/46520540_1293578787448786_2966384631168892928_n.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .inner_mv -->
+                    <div class="inner_text">
+                        <h5>洗車基本メニュー</h5>
+                    </div>
+                    <!-- .inner_text -->
+                </div>
+                <!-- .service_image -->
+                <table class="menu_table">
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">
+
+                                      〇ハケを使用し細部まで丁寧に手洗い致します。
+                                <br/>
+
+                                      〇タイヤワックスとダイヤワックスから選択いただけます。
+                                <br/>
+
+                                      〇各種コーティングとオプションのトップコート併用で格段の仕上がりとなります。
+                                      
+                            </td>
+                            <td>軽自動車 / 普通車</td>
+                            <td>1BOX / RV</td>
+                        </tr>
+                        <tr>
+                            <td>オデッセイ・ヴェゼル・C-HR等</td>
+                            <td>ハイエース・アルファード・ヴェルファイア等</td>
+                        </tr>
+                        <tr>
+                            <td>BASIC洗車</td>
+                            <td>3,990円</td>
+                            <td>4,990円</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="service_image">
+                    <div class="inner_mv">
+                        <ul class="bxslider">
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/01-6.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/02-6.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/03-2.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/04-1.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/05-1.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/06-2.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/47109557_351581485602499_5886507516757540864_n.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .inner_mv -->
+                    <div class="inner_text">
+                        <h5>洗車＋カスタムメニュー</h5>
+                    </div>
+                    <!-- .inner_text -->
+                </div>
+                <!-- .service_image -->
+                <table class="menu_table">
+                    <tbody>
+                        <tr class="table_midashi">
+                            <td>車体サイズ</td>
+                            <td>軽自動車 / 普通車</td>
+                            <td>1BOX / RV</td>
+                        </tr>
+                        <tr>
+                            <td>ボディー鉄粉除去</td>
+                            <td>3,990円</td>
+                            <td>4,590円</td>
+                        </tr>
+                        <tr>
+                            <td>ホイール鉄粉除去</td>
+                            <td colspan="2">1本 1,000円</td>
+                        </tr>
+                        <tr>
+                            <td>水垢除去</td>
+                            <td>4,990円</td>
+                            <td>5,990円</td>
+                        </tr>
+                        <tr>
+                            <td>水垢除去+ホワイトニング</td>
+                            <td>5,990円</td>
+                            <td>6,990円</td>
+                        </tr>
+                        <tr>
+                            <td>ウロコ取りフロント</td>
+                            <td>3,990円</td>
+                            <td>4,990円</td>
+                        </tr>
+                        <tr>
+                            <td>ウロコ取りフロント+リア</td>
+                            <td colspan="2">6,990円</td>
+                        </tr>
+                        <tr>
+                            <td>ウロコ取り 全面</td>
+                            <td colspan="2">8,990円</td>
+                        </tr>
+                        <tr>
+                            <td>車内清掃</td>
+                            <td>1,000円</td>
+                            <td>2,000円</td>
+                        </tr>
+                        <tr>
+                            <td>インテリアコート</td>
+                            <td>2,990円</td>
+                            <td>3,990円</td>
+                        </tr>
+                        <tr>
+                            <td>エンジンルームコート</td>
+                            <td colspan="2">1,000円</td>
+                        </tr>
+                        <tr>
+                            <td>ヘッドライトリペア(スチーマー)</td>
+                            <td colspan="2">15,990円</td>
+                        </tr>
+                        <tr>
+                            <td>超撥水ワイパーレス加工 フロント</td>
+                            <td colspan="2">9,900円</td>
+                        </tr>
+                        <tr>
+                            <td>超撥水ワイパーレス加工 フロント + リア</td>
+                            <td colspan="2">14,990円</td>
+                        </tr>
+                        <tr>
+                            <td>超撥水ワイパーレス加工 全面</td>
+                            <td colspan="2">19,990円</td>
+                        </tr>
+                        <tr>
+                            <td>ベーシック洗車.SPASHANソフトコーティング</td>
+                            <td>6,990円</td>
+                            <td>8,990円</td>
+                        </tr>
+                        <tr>
+                            <td>KAMIKAZE光沢重視ソフトコート</td>
+                            <td>6,990円</td>
+                            <td>8,990円</td>
+                        </tr>
+                        <tr>
+                            <td>グラスウェア耐衝撃性硬化型コーティング9H</td>
+                            <td colspan="2">8,990円</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="service_image">
+                    <div class="inner_mv">
+                        <ul class="bxslider">
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/01-7.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/03-3.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/04-2.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/05-2.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/06-3.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .inner_mv -->
+                    <div class="inner_text">
+                        <h5>ポリッシュメニュー</h5>
+                    </div>
+                    <!-- .inner_text -->
+                </div>
+                <!-- .service_image -->
+
+                <table class="menu_table">
+                    <tbody>
+                        <tr class="table_midashi">
+                            <td>車体サイズ</td>
+                            <td>軽自動車</td>
+                            <td>普通車</td>
+                            <td>1BOX / RV</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                【スピードポリッシュ】</p>
+                                <p>
+                                    〇洗車傷や軽微なウォータースポット除去
+                                    <br/>
+
+                                    お車の艶出し等に最適です。
+                            </td>
+                            <td>39.900円</td>
+                            <td>39.900円</td>
+                            <td>44.900円</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                【磨き】</p>
+                                <p>〇細部まで徹底的に傷を除去し、新車以上の輝きが得られます。
+                            </td>
+                            <td>99,900円</td>
+                            <td>99,900円</td>
+                            <td>109,900円</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                【鏡面仕上げ】</p>
+                                <p>
+                                    〇塗装肌の凹凸を無くし映り込みを鏡の様に仕上げる
+                                    <br/>
+
+                                    最上級の研磨仕上げです。
+                            </td>
+                            <td>259,000円</td>
+                            <td>259,000円</td>
+                            <td>279,000円</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="service_image">
+                    <div class="inner_mv">
+                        <ul class="bxslider">
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/01-8.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/02-7.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/03-4.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/04-3.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/05-3.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/06-4.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/07-1.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .inner_mv -->
+                    <div class="inner_text">
+                        <h5>仕上げコーティング</h5>
+                    </div>
+                    <!-- .inner_text -->
+                </div>
+                <!-- .service_image -->
+                <table class="menu_table">
+                    <tbody>
+                        <tr class="table_midashi">
+                            <td>車体サイズ</td>
+                            <td>軽自動車</td>
+                            <td>普通車</td>
+                            <td>1BOX / RV</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                【スローン9H硬化型コーティング1層】</p>
+                                <p>〇THRONEブランド最高級コーティング</p>
+                            </td>
+                            <td>8,990円</td>
+                            <td>8,990円</td>
+                            <td>11,990円</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                【スローン9H硬化型コーティング2層】</p>
+                                <p>〇THRONEブランド最高級コーティング</p>
+                            </td>
+                            <td>15,900円</td>
+                            <td>15,900円</td>
+                            <td>18,900円</td>
+                        </tr>
+                        <tr>
+                            <td>コーティングトップコート 各3,990円</td>
+                            <td>スローンスプレー</td>
+                            <td colspan="2">光沢 肌触り重視</td>
+                        </tr>
+                        <tr>
+                            <td>SPASHAN,グラスウェア,スローン等</td>
+                            <td>アクリルトップ</td>
+                            <td colspan="2">暴力的撥水効果重視</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="menu_table">
+                    <tbody>
+                        <tr>
+                            <th colspan="2">内装クリーニング</th>
+                        </tr>
+                        <tr>
+                            <td>革シート</td>
+                            <td30,000円<</td>
+                        </tr>
+                        <tr>
+                            <td>布シート</td>
+                            <td>27,900円</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="service_image">
+                    <div class="inner_mv">
+                        <ul class="bxslider">
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/01-9.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/02-8.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/03-5.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/04-4.jpg">
+                            </li>
+                            <li>
+                                <img src="https://spashan.jp/wp-content/uploads/2018/12/06-5.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .inner_mv -->
+                    <div class="inner_text">
+                        <h5>【MOBIOS】過酷なフォーミュラマシーンで実証されたハイスペックオイル</h5>
+                    </div>
+                    <!-- .inner_text -->
+                </div>
+                <!-- .service_image -->
+
+                <table class="menu_table">
+                    <tbody>
+                        <tr class="table_midashi">
+                            <td></td>
+                            <td>粘度</td>
+                            <td>種別</td>
+                            <td>価格</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                【超★Racing Type1】</p>
+                                <p>
+                                    〇フリクションロスを極限まで排除し始動時から
+                                    <br/>
+
+                                    エンジンポテンシャルをアップグレードさせる最上級モデル。
+                            </td>
+                            <td>0W-30</td>
+                            <td>全化学合成油</td>
+                            <td>ℓ/4,000円</td>
+                        </tr>
+                        <p>
+                            <!-- 
+
+                            <tr>
 
 
-  <!-- js -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js">
-</script>
-<!-- <script src="./src/app.js"></script> -->
-<script src="./dist/js/bundle.js"></script>
+                            <td>【超★Racing Type2】
+
+
+                            〇フリクションロスを極限まで排除し始動時から<br />
+                            エンジンポテンシャルをアップグレードさせる最上級モデル。</td>
+
+
+
+
+                            <td>0W-40</td>
+
+
+
+
+                            <td>全化学合成油</td>
+
+
+
+
+                            <td>ℓ/4,000円</td>
+
+
+                            </tr>
+
+
+
+
+                            <tr>
+                            -->
+                        </p>
+                        <td>
+                            【超★Luxury】</p>
+                            <p>
+                                〇使用環境を選ばず常にハイパフォーマンスを発揮する
+                                <br/>
+
+                                ハイスペックモデル。
+                        </td>
+                        <td>5W-50</td>
+                        <td>全化学合成油（ディーゼル可）</td>
+                        <td>ℓ/3,500円</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                【Sportech Type1】</p>
+                                <p>
+                                    〇新車以上のエンジンコンディションに変化させ
+                                    <br/>
+
+                                    走行パフォーマンスを劇的に向上。
+                            </td>
+                            <td>5W-30</td>
+                            <td>全化学合成油（ディーゼル可）</td>
+                            <td>ℓ/3,500円</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                【Sportech Type2】</p>
+                                <p>
+                                    〇新車以上のエンジンコンディションに変化させ
+                                    <br/>
+
+                                    走行パフォーマンスを劇的に向上。
+                            </td>
+                            <td>5W-40</td>
+                            <td>全化学合成油（ディーゼル可）</td>
+                            <td>ℓ/3,500円</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                【Comfort Drive】</p>
+                                <p>
+                                    〇全化学同等のスペックで
+                                    <br/>
+
+                                    エンジンを最適なコンディションに維持。
+                            </td>
+                            <td>5W-30</td>
+                            <td>半化学合成油（ディーゼル可）</td>
+                            <td>ℓ/2,000円</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                【Classic Oil】</p>
+                                <p>
+                                    〇高度に精製されオイルシールへの攻撃性を抑制
+                                    <br/>
+
+                                     添加剤｢バーテックス｣との相性は抜群。
+                            </td>
+                            <td>10W-40</td>
+                            <td>鉱物油</td>
+                            <td>ℓ/1,500円</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="menu_table">
+                    <tbody>
+                        <tr>
+                            <th colspan="3">ATF交換</th>
+                        </tr>
+                        <tr class="table_midashi">
+                            <td>種別</td>
+                            <td>特性</td>
+                            <td>価格</td>
+                        </tr>
+                        <tr>
+                            <td>MOBIOS ATF</td>
+                            <td>最適な摩擦粘度により流動性に優れた様々な環境でも安定した加速や変速フィーリングとなるハイスペックATF</td>
+                            <td>ℓ/3,200円</td>
+                        </tr>
+                        <tr>
+                            <td>AFS</td>
+                            <td>スリップ速度が上昇しても摩擦係数を増加させる安定したスリップコントロールが可能な高級車・低燃費車専用最高級ATF</td>
+                            <td>ℓ/1,200円</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="menu_table">
+                    <tbody>
+                        <tr>
+                            <th colspan="3">【MOBIOS】添加剤</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                【Vertex】ガソリン・ディーゼル共通</p>
+                                <p>
+                                    新感覚!!次世代型チューニングサプリメント！
+                                    <br/>
+
+                                    金属摩擦を極限まで減らしエンジン本来の性能を即体感！
+                                    <br/>
+
+                                    密閉性や潤滑性を回復させエンジンの寿命を延ばします！
+                            </td>
+                            <td>4ℓに対して120ml〜240ml</td>
+                            <td>120ml 8,060円</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                【メタルミッペリン】内部密閉剤</p>
+                                <p>
+                                    ピストン・シリンダー・タペットカバーなど
+                                    <br/>
+
+                                    エンジン内部の傷を修復！
+                                    <br/>
+
+                                    またピストンとシリンダーの圧縮漏れを防止し
+                                    <br/>
+
+                                    エンジン本来のパワーを引き出します！
+                                    <br/>
+
+                                    静粛性や燃費向上にも繋がります！
+                            </td>
+                            <td>5ℓに対して1本</td>
+                            <td>22,000円</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <!-- .section -->
+            <div class="section">
+                <h2>
+                    SPASHAN NOVITEC car care center
+                    <span class="store_span">スパシャン ノビテック カーケアセンター</span>
+                </h2>
+                <div class="store_detail">
+                    <div class="image">
+                        <div class="wrapper_store_iamge">
+                            <div class="store_slider">
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/01.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/02.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/03.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/04.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/05.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/06.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/07.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/08.jpg"/>
+                                </div>
+                            </div>
+                            <div class="prev-btn">
+                                <img src="https://spashan.jp/wp-content/themes/spashan/images/angle_left.png" alt=""/>
+                            </div>
+                            <div class="next-btn">
+                                <img src="https://spashan.jp/wp-content/themes/spashan/images/angle_right.png" alt=""/>
+                            </div>
+                        </div>
+                        <!-- .wrapper_store_iamge -->
+
+                    </div>
+                    <!-- .image -->
+                    <div class="info">
+                        <h5>住所 / 兵庫県尼崎市西昆陽1丁目31−13</h5>
+                        <h4>営業時間 / 09:00〜20:00</h4>
+                        <h6>電話番号 / 06-4950-7573</h6>
+                        <div class="map">
+                            <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.431670509042!2d135.38030820924845!3d34.772201650412846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f1cd4080ee7b%3A0x1d6c916f3dad29d8!2z44K544OR44K344Oj44OzIOODnuOCueOCv-ODvOOCt-ODp-ODg-ODlzE3MeWwvOW0juW6lw!5e0!3m2!1sja!2sjp!4v1541744491137" width="100%" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                        <!-- .map -->
+
+                    </div>
+                    <!-- .info -->
+
+                </div>
+                <!-- .store_detail -->
+
+            </div>
+            <!-- .section -->
+            <div class="section">
+                <h2>
+                    Chibachuo Master Shop
+                    <span class="store_span">マスターショップ千葉中央店</span>
+                </h2>
+                <div class="store_detail">
+                    <div class="image">
+                        <div class="wrapper_store_iamge">
+                            <div class="store_slider2">
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/chiba/01.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/chiba/02.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/chiba/03.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/chiba/04.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/chiba/05.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/chiba/06.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/chiba/07.jpg"/>
+                                </div>
+                                <div>
+                                    <img src="https://spashan.jp/wp-content/themes/spashan/images/store/chiba/08.jpg"/>
+                                </div>
+                            </div>
+                            <div class="prev-btn2">
+                                <img src="https://spashan.jp/wp-content/themes/spashan/images/angle_left.png" alt=""/>
+                            </div>
+                            <div class="next-btn2">
+                                <img src="https://spashan.jp/wp-content/themes/spashan/images/angle_right.png" alt=""/>
+                            </div>
+                        </div>
+                        <!-- .wrapper_store_iamge -->
+
+                    </div>
+                    <!-- .image -->
+                    <div class="info">
+                        <h5>住所 / 千葉県千葉市中央区生実町1213-1</h5>
+                        <h4>営業時間 / 09:00〜20:00</h4>
+                        <h6>電話番号 / 043-356-4258</h6>
+                        <div class="map">
+                            <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d559.9845983631619!2d140.14575823431463!3d35.56503443560926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60229bb655533c13%3A0x2479cc02e56ea2d!2zU1BBU0hBTuODnuOCueOCv-ODvOOCt-ODp-ODg-ODl-WNg-iRieS4reWkruW6lw!5e0!3m2!1sja!2sjp!4v1543819127810" width="100%" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                        <!-- .map -->
+
+                    </div>
+                    <!-- .info -->
+
+                </div>
+                <!-- .store_detail -->
+
+            </div>
+            <!-- .section -->
+
+            <!--
+            <div class="section map">
+            <h2>Map<span>マップ</span></h2>
+            </div>
+            -->
+
+        </div>
+        <!-- .content -->
+
+    </div>
+    <!-- .wrapper_content -->
+    <div class="wrapper_footer">
+        <div class="content">
+            <div class="left">
+                <ul>
+                    <li>Super sports collection, Inc.</li>
+                    <li>16-3, Sumiyoshihamacho, Higashinada-ku Kobe-shi, Hyogo, Japan</li>
+                    <li>078-846-0870</li>
+                </ul>
+            </div>
+            <!-- .left -->
+            <div class="right">
+                <h4>Site Content</h4>
+                <ul>
+                    <li>
+                        <a href="https://spashan.jp">
+                            <i class="fal fa-angle-double-right"></i>
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://spashan.jp/products">
+                            <i class="fal fa-angle-double-right"></i>
+                            CATALOG
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://spashan.jp/mastershop">
+                            <i class="fal fa-angle-double-right"></i>
+                            MASTER SHOP
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://spashan.jp/company">
+                            <i class="fal fa-angle-double-right"></i>
+                            COMPANY
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://spashan.jp/contact">
+                            <i class="fal fa-angle-double-right"></i>
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- .right -->
+        </div>
+        <!-- .content -->
+        <div class="copy_content">
+                Copyright Super sports collection, Inc. Allrights reserved.
+            </div>
+        <!-- .copy_content -->
+    </div>
+    <!-- .wrapper_footer -->
+
+    <script>
+    $(function() {
+        $(window).scroll(function() {
+            $('.fadein').each(function() {
+                var elemPos = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll > elemPos - windowHeight + 200) {
+                    $(this).addClass('scrollin');
+                }
+            });
+        });
+    });
+    </script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var wpcf7 = {
+        "apiSettings": {
+            "root": "https:\/\/spashan.jp\/wp-json\/contact-form-7\/v1",
+            "namespace": "contact-form-7\/v1"
+        },
+        "recaptcha": {
+            "messages": {
+                "empty": "\u3042\u306a\u305f\u304c\u30ed\u30dc\u30c3\u30c8\u3067\u306f\u306a\u3044\u3053\u3068\u3092\u8a3c\u660e\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+            }
+        }
+    };
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://spashan.jp/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.5'></script>
+    <script type='text/javascript' src='https://spashan.jp/wp-includes/js/wp-embed.min.js?ver=4.9.13'></script>
 </body>
 </html>
