@@ -31,7 +31,7 @@
 <html lang="ja">
 <head>
     <!-- Google Tag Manager -->
-    <script>
+    <!-- <script>
     (function(w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
@@ -47,17 +47,24 @@
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-K9F8MCG');
-    </script>
+    </script> -->
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+
+  
+    <!-- Takenn stylesheet -->
+    <!-- <link rel="stylesheet" href="./src/reset.css"> -->
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+
     <link rel="stylesheet" type="text/css" href="https://spashan.jp/wp-content/themes/spashan/css/reset.css" media="all">
     <link rel="stylesheet" href="https://spashan.jp/wp-content/themes/spashan/style.css" type="text/css" media="screen and (min-width: 751px)"/>
     <link rel="stylesheet" type="text/css" href="https://spashan.jp/wp-content/themes/spashan/qubic.css" media="screen and (min-width: 751px)">
     <link rel="stylesheet" type="text/css" href="https://spashan.jp/wp-content/themes/spashan/sp.css" media="screen and (max-width: 750px)">
-    <link rel="stylesheet" href="https://spashan.jp/wp-content/themes/spashan/css/fontawesome-all.min.css" media="all">
+    <!-- errorの原因 -->
+    <!-- <link rel="stylesheet" href="https://spashan.jp/wp-content/themes/spashan/css/fontawesome-all.min.css" media="all"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://spashan.jp/wp-content/themes/spashan/js/fontawesome-all.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -185,6 +192,34 @@
 </head>
 
 <body class="drawer drawer--right">
+
+  <!-- <style>/* -->
+    <!-- header -->
+    <header id="header">
+      <div class="clearfix">
+        <!-- title -->
+        <h1 class="site-title"><a href="index.html">CLUB HART</a></h1>
+        <!-- global_nav -->
+        <nav class="nav">
+          <ul class="nav-list">
+            <il class="nav-item"><a href="index.html">HOME</a></il>
+            <il class="nav-item"><a href="pricelist.html">PRICE</a></il>
+            <il class="nav-item"><a href="contact.html">CONTACT</a></il>
+          </ul>
+        </nav>
+      </div>
+
+    <!-- hamberger-menu -->
+      <div class="hamberger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <!-- */</style> -->
+
+  <style>/*
+  <!-- header_sp -->
   <div class="sp_only">
     <header role="banner">
       <button type="button" class="drawer-toggle drawer-hamburger">
@@ -201,22 +236,11 @@
             <li><a href="https://spashan.jp/category/blog/">BLOG</a></li>
             <li><a href="https://spashan.jp/company">COMPANY</a></li>
             <li><a href="https://spashan.jp/contact">CONTACT</a></li>
-            <!-- <li class="sp_only change first"><a href="">English</a></li> -->
-            <!-- <li class="sp_only change"><a href="">Chinese</a></li> -->
-            <!-- <li class="drawer-dropdown"> -->
-              <!-- <a class="drawer-menu-item" href="#" data-toggle="dropdown" role="button" aria-expanded="false">SERVICE<span class="drawer-caret"></span></a> -->
-              <!-- <ul class="drawer-dropdown-menu"> -->
-                <!-- <li><a class="drawer-dropdown-menu-item" href="">aaa</a></li> -->
-                <!-- <li><a class="drawer-dropdown-menu-item" href="">bbb</a></li> -->
-                <!-- <li><a class="drawer-dropdown-menu-item" href="">ccc</a></li> -->
-              <!-- </ul> -->
-            <!-- </li> -->
           </ul>
-          <!-- <a href="tel:06-1234-1234" class="sp_menu_btn"><i class="fal fa-mobile-android-alt"></i>06-1234-1234</a> -->
           <div class="lan_switch">
             <a href="https://spashan.jp/en/">ENGLISH</a>
           </div>
-        </div>
+         </div>
       </nav>
     </header>
     <script>
@@ -225,13 +249,8 @@
       });
     </script>
   </div>
-  <!-- .sp_only -->
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9F8MCG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
+  <!-- header_pc -->
   <div class="wrapper_header sub_header">
     <div class="header">
       <div class="logo_area">
@@ -247,35 +266,37 @@
           <li><a href="https://spashan.jp/mastershop">MASTER SHOP</a></li>
           <li><a href="https://spashan.jp/company">COMPANY</a></li>
           <li><a href="https://spashan.jp/contact">CONTACT</a></li>
-          <!-- <li class="sp_only change first"><a href="">English</a></li> -->
-          <!-- <li class="sp_only change"><a href="">Chinese</a></li> -->
         </ul>
       </div>
       <!-- .header -->
     </div>
     <!-- .menu_area -->
 
-    <!-- <div class="lan_switch pc_only"> -->
-      <!-- <a href="https://spashan.jp/en/">ENGLISH</a> -->
-    <!-- </div> -->
   </div>
   <!-- .wrapper_header -->
+*/</style>
+
+
 
   <!-- pタグ自動挿入制限 start-->
   <!-- pタグ自動挿入制限 stop -->
 
-  <div class="wrapper_mv_sub">
+
+  <div id="pricelist">
+      <section class="pricelist-top"></section>
+  </div>
+  <!-- <div class="wrapper_mv_sub">
     <img src="https://spashan.jp/wp-content/themes/spashan/images/mv_sub_01.jpg" alt="">
     <h2>MASTERSHOP</h2>
     <h3>マスターショップ</h3>
-  </div>
+  </div> -->
   <!-- .wrapper_mv_sub -->
 
   <div class="wrapper_pankuzu">
     <div class="pankuzu">
       <ul>
-        <li><a href="https://spashan.jp">HOME</a></li>
-        <li>マスターショップ</li>
+        <li><a href="./index.html">HOME</a></li>
+        <li>Pricelist</li>
       </ul>
     </div>
     <!-- .pankuzu -->
@@ -693,12 +714,6 @@
                   <td>ℓ/4,000円</td>
                 </tr>
                 <p>
-                  <!-- <tr> -->
-                    <!-- <td>【超★Racing Type2】〇フリクションロスを極限まで排除し始動時から<br />エンジンポテンシャルをアップグレードさせる最上級モデル。</td> -->
-                    <!-- <td>0W-40</td> -->
-                    <!-- <td>全化学合成油</td> -->
-                    <!-- <td>ℓ/4,000円</td> -->
-                  <!-- </tr> -->
                 </p>
                   <td>【超★Luxury】</p><p>〇使用環境を選ばず常にハイパフォーマンスを発揮する<br/>ハイスペックモデル。</td>
                   <td>5W-50</td>
@@ -851,13 +866,11 @@
           </div>
           <!-- .section -->
 
-          <!-- <div class="section map"> -->
-            <!-- <h2>Map<span>マップ</span></h2> -->
-          <!-- </div> -->
-
         </div>
         <!-- .content -->
       </div>
+
+      <style> /*
       <!-- .wrapper_content -->
       <div class="wrapper_footer">
         <div class="content">
@@ -881,15 +894,68 @@
           </div>
           <!-- .right -->
         </div>
-        <!-- .content -->
         <div class="copy_content">
           Copyright Super sports collection, Inc. Allrights reserved.
         </div>
-        <!-- .copy_content -->
       </div>
-      <!-- .wrapper_footer -->
+      */ </style>
+
+    <!-- <style>/* -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-content clearfix">
+          <!-- 背景画像 透過 -->
+        <div class="footer-mask">
+          <div class="footer-left">
+          <table>
+            <!-- 店舗名 -->
+            <tr>
+              <td>会社名:</td>
+              <td>株式会社FREE</td>
+            </tr>
+            <tr>
+              <td>店舗名：</td>
+              <td>CLUB HART</td>
+            </tr>
+            <tr>
+              <td>設立日：</td>
+              <td>2012年9月11日</td>
+            </tr>
+            <!-- 電話番号 -->
+            <tr>
+              <td>Tel:</td>
+              <td>0154-64-9555</td>
+            </tr>
+            <tr>
+            <!-- 所在地 -->
+            <tr>
+              <td>所在地:</td>
+              <td>北海道釧路市星が浦大通３丁目２番６号</td>
+            </tr>
+            <!-- 代表 -->
+            <tr>
+              <td>代表取締役:</td>
+              <td>大野 寛将</td>
+            </tr>
+          </table>
+        </div>
+        <!-- footer-nav -->
+        <div class="footer-right">
+          <ul class="footer-nav">
+            <li class="footer-item"><a href="index.html">HOME</a></li>
+            <li class="footer-item"><a href="pricelist.html">PRICE</a></li>
+            <li class="footer-item"><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <!-- copyright -->
+      <p class="copyright">copyright</p>
+    </footer>
+  <!-- */</style> -->
 
 <script>
+  // fadein
   $(function() {
     $(window).scroll(function() {
       $('.fadein').each(function() {
@@ -905,20 +971,24 @@
 </script>
 <script type='text/javascript'>
   /* <![CDATA[ */
-    var wpcf7 = {
-      "apiSettings": {
-        "root": "https:\/\/spashan.jp\/wp-json\/contact-form-7\/v1",
-        "namespace": "contact-form-7\/v1"
-      },
-      "recaptcha": {
-        "messages": {
-          "empty": "\u3042\u306a\u305f\u304c\u30ed\u30dc\u30c3\u30c8\u3067\u306f\u306a\u3044\u3053\u3068\u3092\u8a3c\u660e\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
-        }
-      }
-    };
+    // var wpcf7 = {
+    //   "apiSettings": {
+    //     "root": "https:\/\/spashan.jp\/wp-json\/contact-form-7\/v1",
+    //     "namespace": "contact-form-7\/v1"
+    //   },
+    //   "recaptcha": {
+    //     "messages": {
+    //       "empty": "\u3042\u306a\u305f\u304c\u30ed\u30dc\u30c3\u30c8\u3067\u306f\u306a\u3044\u3053\u3068\u3092\u8a3c\u660e\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+    //     }
+    //   }
+    // };
   /* ]]> */
 </script>
 <script type='text/javascript' src='https://spashan.jp/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.5'></script>
 <script type='text/javascript' src='https://spashan.jp/wp-includes/js/wp-embed.min.js?ver=4.9.13'></script>
+
+<!-- taken js -->
+<!-- <script src="./src/app.js"></script> -->
+<script src="./dist/js/bundle.js"></script>
 </body>
 </html>
