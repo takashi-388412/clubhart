@@ -85,3 +85,47 @@
     }
   }
 }
+
+#contact {
+  li {
+    list-style: none;
+  }
+  .name {
+    margin: 0 0 1em;
+  }
+  .email {
+    margin: 0 0 1em;
+  }
+  .message {
+    margin: 0 0 1em;
+    height: 10em;
+  }
+  .submit {
+    width: 49%;
+    float: left;
+  }
+  .reset {
+    width: 49%;
+    float: right;
+
+    background-color: black;
+    border: none;
+    color: white;
+    flex:1 1 auto;
+    font-family: Orbitron, sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s;
+    box-sizing: border-box;
+    
+    &:hover {
+      opacity: .5;
+      color: red;
+    }
+  }
+}
