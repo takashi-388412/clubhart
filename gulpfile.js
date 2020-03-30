@@ -89,7 +89,7 @@ gulp.task("imagemin", () =>
 
 //ファイル変更時に行うタスク
 gulp.task('watch', function (done) {
-  gulp.watch('./*.html', gulp.task('bs-reload'));
+  gulp.watch('./**/*.html', gulp.task('bs-reload'));
   gulp.watch('./src/**/*.scss', gulp.task('sass'));
   gulp.watch('./src/**/*.scss', gulp.task('bs-reload')); //bundle後に画面更新
   gulp.watch('./src/**/*.js', gulp.task('bundle.js'));
