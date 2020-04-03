@@ -277,10 +277,19 @@ transform : translate(0, 0);
 .footer {
     background-color: #000;
     color: #fff;
+    & .copyright {
+      text-align: center;
+      padding: 10px;
+      color: #bbb;
+    }
+  // footer-nav
+  &-nav {
+
+  }
 
   &-content {
     color: #bbb;
-    height: 300px;
+    height: 400px;
     background-image: url(../../src/img/building.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -288,17 +297,24 @@ transform : translate(0, 0);
   }
   &-mask {
     background:rgba(0,0,0,0.7);
-    padding-top: 50px;
-    height: 300px;
+    padding: 50px 50px 0;
+    height: 400px;
+    @include mq() {
+      padding: 50px 10px 0;
+    }
   }
   &-left {
     float: left;
     @include mq() {
       float: initial;
+      margin-bottom: 30px;
     }
 
     & table {
-
+      font-size: 1.1em;
+    @include mq() {
+      margin: 0 auto;
+    }
       & tr {
         font-size: 1.0em;
         line-height: 1.5em;
@@ -307,7 +323,6 @@ transform : translate(0, 0);
         }
       }
       & td {
-
       }
     }
   }
@@ -318,21 +333,23 @@ transform : translate(0, 0);
     }
   }
   &-nav {
-    // text-align: right;
+
   }
   &-item {
     display: inline-block;
     padding: 0 15px;
     letter-spacing: 1px;
+    font-size: 1.2em;
     @include mq() {
       display: block;
       text-align: center;
       padding: 10px;
+      border: 1px solid;
+      font-size: 1.0em;
     }
     & + .footer-item {
-      border-left: 1px solid #bbb;
+      border-left: 2px solid #bbb;
     @include mq() {
-      border-left: none;
     }
     }
     & a {
@@ -340,14 +357,13 @@ transform : translate(0, 0);
       transition: color 0.15s;
       text-decoration: none;
       &:hover {
-      border-bottom: 1px dashed #777;
+      border-bottom: 2px dashed #777;
       color: #ddd;
+      opacity: 0.8;
+      @include mq() {
+        border-bottom: none;
+      }
       }
     }
-  }
-  & .copyright {
-    text-align: center;
-    padding: 10px;
-    color: #bbb;
   }
 }
