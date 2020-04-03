@@ -30,6 +30,11 @@
       box-sizing: border-box;
       float: left;
       display: table-cell;
+      @include tb {
+        padding: 0;
+        width: 100%;
+        float: none;
+      }
     }
     &-form {
       height: 100%;
@@ -78,6 +83,12 @@
       overflow: hidden;
       display: table-cell;
       float: right;
+      @include tb {
+        width: 100%;
+        float: none;
+        border-left: none;
+        padding: 0;
+      }
       & iframe,object,embed {
         width: 20em;
         height: 15em;
