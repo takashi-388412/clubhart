@@ -366,4 +366,10 @@ transform : translate(0, 0);
       }
     }
   }
+  & .copyright {
+    text-align: center;
+    padding: 10px;
+    color: #bbb;
+    margin-bottom: -15px;
+  }
 }
