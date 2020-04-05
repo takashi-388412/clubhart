@@ -3,44 +3,71 @@
 * -------------------------------------------*/
 #contact {
   .contact-top {
-    background: url('../../src/img/car1.jpg') center;
+    background: url('../../src/img/ios-3.jpg') center;
     background-size: cover;
     width: 100%;
-    height: 250px;
+    height: 300px;
     @include mq() {
       height: 200px;
     }
   }
   .contact {
+    margin: 20px;
     .heading {
       margin: 0 auto;
       width: 40vw;
       padding: 0 0 1em;
       border-bottom: solid 1px black;
-    }
-    margin: 5vh 25%;
-    &-wrapper {
-      margin: 3vh auto 0;
-      display: table;
-    }
-    &-left {
-      padding: 2em 2em 0 0;
-      width: 50%;
-      box-sizing: border-box;
-      float: left;
-      display: table-cell;
-      @include tb {
-        padding: 0;
-        width: 100%;
-        float: none;
+      @include tb() {
+        padding: 0 0 0.2em;
       }
     }
+    &-wrapper {
+      display: flex;
+      padding: 80px;
+      @include tb() {
+        display: block;
+        padding: 10px;
+      }
+    }
+    &-left {
+      flex-basis: 49.5%;
+      @include tb() {
+        width: 100%;
+      }
+    }
+    &-right {
+      flex-basis: 49.5%;
+      position: relative;
+      height: 0;
+      padding-bottom: 50%;
+      overflow: hidden;
+      @include tb() {
+        width: 100%;
+      }
+      & iframe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        max-width: 90%;
+        max-height: 80%;
+        @include tb() {
+        max-height: 100%;
+        max-width: 100%;
+        }
+      }
+
+    }
     &-form {
+      //form layout(name,email,textarea)
       height: 100%;
       input[type=text],
       input[type=email],
       textarea,
       input[type=submit] {
+        padding: 5px;
         margin: 0 0 1em;
         display: block;
         outline: none;
@@ -48,48 +75,52 @@
       }
       input[type=text] {
         height: 2em;
-        width: 15em;
+        font-size: 1.1em;
+        // width: 15em;
+        @include tb() {
+          font-size: 0.8em;
+        }
       }
       input[type=email] {
         height: 2em;
-        width: 15em;
+        font-size: 1.1em;
+        // width: 15em;
+        @include tb() {
+          font-size: 0.8em;
+        }
       }
       textarea {
         width: 100%;
-        height: 15em;
+        height: 10em;
+        font-size: 1.5em;
+        @include tb() {
+          height: 7em;
+          font-size: 1.2em;
+        }
+      }
+      //form button layout
+      & .buttons {
+        text-align: center;
       }
       input[type=submit] {
-        margin: 0 0 0 .5em;
-        width: 6em;
-        height: 3em;
-        float: right;
+        display: inline-block;
+        width: 10em;
+        height: 4em;
         cursor: pointer;
+        @include tb() {
+          height: 2em;
+          margin-bottom: 20px;
+        }
       }
+      // focus action
       input[type=text]:focus,
+      input[type=email]:focus,
       textarea:focus {
         box-shadow: 0 0 10px #70bdd3 inset;
       }
+      // hover action
       input[type=submit]:hover {
         opacity: 0.5;
-      }
-    }
-    &-right {
-      width: 50%;
-      padding: 2em 0 2em 2em;
-      border-left: solid 1px black;
-      box-sizing: border-box;
-      overflow: hidden;
-      display: table-cell;
-      float: right;
-      @include tb {
-        width: 100%;
-        float: none;
-        border-left: none;
-        padding: 0;
-      }
-      & iframe,object,embed {
-        width: 20em;
-        height: 15em;
       }
     }
   }
