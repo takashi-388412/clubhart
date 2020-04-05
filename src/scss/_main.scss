@@ -88,8 +88,11 @@ body {
    }
  }
  .scroll {
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
+    @include mq() {
+      margin-top: 50px;
+    }
   &-top {
     display: inline-block;
     font-size: 1.2em;
