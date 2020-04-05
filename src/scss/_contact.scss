@@ -16,12 +16,10 @@
     .heading {
       margin: 0 auto;
       width: 40vw;
-      padding: 1em 0; 
+      padding: 0 0 1em;
       border-bottom: solid 1px black;
       @include tb() {
-        font-size: 1.4em;
-        padding: .5em 0; 
-        margin-bottom: 20px;
+        padding: 0 0 0.2em;
       }
     }
     &-wrapper {
