@@ -24,17 +24,34 @@
 // ==================================
 // hero
 // ==================================
-  .slider-text {
-    position: absolute; //swiper-container外で、置くとnavの上に来てしまう。
-    z-index: 5;
-    font-size: 2.5em;
-    color: #fff;
-    width: 100%;
-    top: 45%;
-    text-align: center;
-    font-weight: bold;
+.hero {
+  position: relative;
+  // .slider-text {
+  //   position: absolute; //swiper-container外で、置くとnavの上に来てしまう。
+  //   z-index: 5;
+  //   font-size: 2.5em;
+  //   color: #fff;
+  //   width: 100%;
+  //   top: 45%;
+  //   text-align: center;
+  //   font-weight: bold;
+  // }
+  .slider {
+    &-inner {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        z-index: 5;
+        opacity: 0.8;
+    }
+    &-logo {
+      width: 300px;
+      height: auto;
+      border-radius: 30%;
+    }
   }
-  .slide-img {
+  .slide {
+    &-img {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -42,17 +59,20 @@
     background-position: center center; //背景画像は中央を軸に表示させる
     height: 100vh;  //全画面表示
     // // mask
-    // background: url(https://glatchdesign.com/wp-content/uploads/2016/02/mountain0209.jpg) no-repeat center;
+    background: url(https://glatchdesign.com/wp-content/uploads/2016/02/mountain0209.jpg) no-repeat center;
+
+      &::after {
+      background-color: rgba(0,0,0,0.5); 
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: '';
+      }
+    }
   }
-  .slide-img::after {
-    background-color: rgba(0,0,0,0.2); 
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: '';
-  }
+}
 // ==================================
 // ABOUT
 // ==================================
@@ -282,43 +302,43 @@
 
 // ==================================
 // company-info
-// ==================================
-.company-info {
-  .title {
-    text-align: center;
-    font-size: 1.5em;
-    margin:80px 0 20px;
+  // ==================================
+  .company-info {
+    .title {
+      text-align: center;
+      font-size: 1.5em;
+      margin:80px 0 20px;
+    }
+    .scroll {
+      &-wrapper {
+        border: 5px dotted rgba(255,255,255,0.5);
+      }
+      &-list {
+      padding: 10px;
+      max-height: 400px;
+      overflow-y: auto;
+      list-style-type: none;
+      @include mq() {
+        padding: 5px;
+      }
+      }
+      &-item {
+        display: flex;
+        letter-spacing: 1px;
+        padding: 10px 0;
+        @include mq () {
+          font-size: .8em;
+        }
+        & .company {
+          flex-basis: 40%;
+        }
+        & .address {
+          flex-basis: 40%;
+        }
+        & .number {
+          flex-basis: 20%;
+        }
+      }
+    }
   }
-  .scroll {
-    &-wrapper {
-      border: 5px dotted rgba(255,255,255,0.5);
-    }
-    &-list {
-    padding: 10px;
-    max-height: 400px;
-    overflow-y: auto;
-    list-style-type: none;
-    @include mq() {
-      padding: 5px;
-    }
-    }
-    &-item {
-      display: flex;
-      letter-spacing: 1px;
-      padding: 10px 0;
-      @include mq () {
-        font-size: .8em;
-      }
-      & .company {
-        flex-basis: 40%;
-      }
-      & .address {
-        flex-basis: 40%;
-      }
-      & .number {
-        flex-basis: 20%;
-      }
-    }
-  }
-}
 }
