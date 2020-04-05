@@ -13,7 +13,6 @@
   }
   .contact {
     margin: 20px;
-    // margin: 5vh 25%;
     .heading {
       margin: 0 auto;
       width: 40vw;
@@ -26,8 +25,6 @@
     &-wrapper {
       display: flex;
       padding: 80px;
-      // margin: 3vh auto 0;
-      // display: table;
       @include tb() {
         display: block;
         padding: 10px;
@@ -43,7 +40,6 @@
       flex-basis: 49.5%;
       position: relative;
       height: 0;
-      // padding-bottom: 56.25%;
       padding-bottom: 50%;
       overflow: hidden;
       @include tb() {
@@ -110,8 +106,6 @@
         display: inline-block;
         width: 10em;
         height: 4em;
-        // margin: 1em 5em;
-      // float: right;
         cursor: pointer;
         @include tb() {
           height: 2em;
