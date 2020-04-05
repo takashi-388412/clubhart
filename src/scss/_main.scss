@@ -88,13 +88,17 @@ body {
    }
  }
  .scroll {
-   margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
-   &-top {
+    @include mq() {
+      margin-top: 50px;
+    }
+  &-top {
     display: inline-block;
     font-size: 1.2em;
     cursor: pointer;
     outline: none;
+    color: #fff;
     &:hover {
       box-shadow: 5px 5px 5px rgba(0,0,0,0.20);
       transform: translateY(-4px);
@@ -112,7 +116,7 @@ body {
   }
  }
 /* -------------------------------------------
-* JS(JSの操作で追加するプルパティ)
+* JS(JSの操作で追加するプロパティ
 * -------------------------------------------*/
 //section毎 ふわっとfadein
 .fade-up {
