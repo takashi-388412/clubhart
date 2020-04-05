@@ -44,7 +44,7 @@ $(function () {
   Backtotop.click(function () {
     $('body,html').animate({
       scrollTop: 0
-    }, 2500);
+    }, 2000);
     return false;
   });
 });
