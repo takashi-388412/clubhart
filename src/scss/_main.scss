@@ -78,13 +78,15 @@ body {
    clear: both;
  }
  .btn {
+   font-family: Orbitron, sans-serif;
    display: inline-block;
    text-decoration: none;
    padding: 15px;
    color: #fff;
-   background-color: #8f8f8f;
+   border-bottom: solid 2px white;
    &:hover {
-     opacity: 0.5;
+    background-color: #8f8f8f;
+    border-bottom: none;
    }
  }
 .scroll {
