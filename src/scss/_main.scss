@@ -78,21 +78,23 @@ body {
    clear: both;
  }
  .btn {
+   font-family: Orbitron, sans-serif;
    display: inline-block;
    text-decoration: none;
    padding: 15px;
    color: #fff;
-   background-color: #8f8f8f;
+   border-bottom: solid 2px white;
    &:hover {
-     opacity: 0.5;
+    background-color: #8f8f8f;
+    border-bottom: none;
    }
  }
- .scroll {
-    margin-top: 100px;
-    text-align: center;
-    @include mq() {
-      margin-top: 50px;
-    }
+.scroll {
+  margin-top: 100px;
+  text-align: center;
+  @include mq() {
+    margin-top: 50px;
+  }
   &-top {
     display: inline-block;
     font-size: 1.2em;
@@ -102,19 +104,20 @@ body {
     &:hover {
       box-shadow: 5px 5px 5px rgba(0,0,0,0.20);
       transform: translateY(-4px);
+      color: limegreen;
     }
-   }
+  }
   &-down {
     text-decoration: none;
     color: #fff;
     &:hover {
-      opacity: 0.5;
+      color: limegreen;
     }
   }
   i {
     font-size: 2em;
   }
- }
+}
 /* -------------------------------------------
 * JS(JSの操作で追加するプロパティ
 * -------------------------------------------*/
