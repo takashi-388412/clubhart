@@ -87,12 +87,12 @@ body {
      opacity: 0.5;
    }
  }
- .scroll {
-    margin-top: 100px;
-    text-align: center;
-    @include mq() {
-      margin-top: 50px;
-    }
+.scroll {
+  margin-top: 100px;
+  text-align: center;
+  @include mq() {
+    margin-top: 50px;
+  }
   &-top {
     display: inline-block;
     font-size: 1.2em;
@@ -102,19 +102,20 @@ body {
     &:hover {
       box-shadow: 5px 5px 5px rgba(0,0,0,0.20);
       transform: translateY(-4px);
+      color: limegreen;
     }
-   }
+  }
   &-down {
     text-decoration: none;
     color: #fff;
     &:hover {
-      opacity: 0.5;
+      color: limegreen;
     }
   }
   i {
     font-size: 2em;
   }
- }
+}
 /* -------------------------------------------
 * JS(JSの操作で追加するプロパティ
 * -------------------------------------------*/
