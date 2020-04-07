@@ -87,8 +87,8 @@
 // ==================================
 .about {
   padding-top: 80px;
-
-  &-content {
+  
+  &-area {
     width: 100%;
     text-align: center;
   }
@@ -123,7 +123,7 @@
 .service {
   padding-top: 80px;
 
-  &-content {
+  &-area {
 
    }
    &-inner {
@@ -147,9 +147,9 @@
       width: 100%;
     }
   }
-    &:nth-child(n+5) {
-      // width: 100%;
-    }
+    // &:nth-child(n+5) {
+    //   // width: 100%;
+    // }
   //   & a {
   //     display: block;
   //     text-decoration: none;
@@ -269,7 +269,7 @@
 // SNS
 // ==================================
 .sns {
-  &-content {
+  &-area {
     padding: 100px 80px;
     @include mq() {
       padding: 0;
@@ -310,16 +310,11 @@
   // }
 
 // ==================================
-// company-info
-  // ==================================
-  .company-info {
-    .title {
-      text-align: center;
-      font-size: 1.5em;
-      margin:80px 0 20px;
-    }
+// stores
+// ==================================
+  .store {
     .scroll {
-      &-wrapper {
+      &-area {
         border: 5px dotted rgba(255,255,255,0.5);
       }
       &-list {
@@ -350,4 +345,42 @@
       }
     }
   }
+// ==================================
+// OVERVIEW
+// ==================================
+  .overview {
+    padding: 100px;
+    @include tb() {
+      padding: 0;
+    }
+    &-area {
+      margin-top: 20px;
+      & table {
+          margin: 0 auto;
+        & tbody {
+
+           tr {
+             border-bottom:1px solid #fff ;
+            & th {
+              font-size: 1.3em;
+              padding: 25px 10px 10px 10px;
+              width: 33%;
+              vertical-align: top;
+              @include tb() {
+                font-size: 1.0em;
+              }
+            }
+            & td {
+               padding: 25px 10px 10px 10px;
+              & a {
+                color: #fff;
+                line-height: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
