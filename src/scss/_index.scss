@@ -345,4 +345,42 @@
       }
     }
   }
+// ==================================
+// OVERVIEW
+// ==================================
+  .overview {
+    padding: 100px;
+    @include tb() {
+      padding: 0;
+    }
+    &-area {
+      margin-top: 20px;
+      & table {
+          margin: 0 auto;
+        & tbody {
+
+           tr {
+             border-bottom:1px solid #fff ;
+            & th {
+              font-size: 1.3em;
+              padding: 25px 10px 10px 10px;
+              width: 33%;
+              vertical-align: top;
+              @include tb() {
+                font-size: 1.0em;
+              }
+            }
+            & td {
+               padding: 25px 10px 10px 10px;
+              & a {
+                color: #fff;
+                line-height: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
