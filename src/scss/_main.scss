@@ -96,8 +96,9 @@ body {
    display: inline-block;
    text-decoration: none;
    padding: 15px;
-   color: #fff;
-   border-bottom: solid 2px white;
+   color: black;
+   border-bottom: solid 2px black;
+   z-index: 9999;
    &:hover {
     background-color: #8f8f8f;
     border-bottom: none;
@@ -106,6 +107,7 @@ body {
 .scroll {
   margin-top: 100px;
   text-align: center;
+  z-index: 9999;
   @include mq() {
     margin-top: 50px;
   }
@@ -114,18 +116,18 @@ body {
     font-size: 1.2em;
     cursor: pointer;
     outline: none;
-    color: #fff;
+    color: #8f8f8f;
     &:hover {
-      box-shadow: 5px 5px 5px rgba(0,0,0,0.20);
-      transform: translateY(-4px);
-      color: limegreen;
+      // box-shadow: 5px 5px 5px rgba(0,0,0,0.20);
+      // transform: translateY(-4px);
+      color: black;
     }
   }
   &-down {
     text-decoration: none;
-    color: #fff;
+    color: #8f8f8f;
     &:hover {
-      color: limegreen;
+      color: black;
     }
   }
   i {
