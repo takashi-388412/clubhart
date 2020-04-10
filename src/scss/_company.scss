@@ -12,21 +12,28 @@
     }
   }
   .company {
-    padding: 100px;
+    padding: 200px 100px 80px;
     @include tb() {
-      padding: 0;
+      padding: 100px;
+    }
+    @include mq() {
+      padding: 100px 0 0;
     }
     &-area {
-      margin-top: 20px;
+        margin-top: 50px;
+      @include mq () {
+        padding: 20px;
+      }
       & table {
           margin: 0 auto;
         & tbody {
 
            tr {
-             border-bottom:1px solid #fff ;
+             border:1px solid #b0c4de;
             & th {
               font-size: 1.3em;
-              padding: 25px 10px 10px 10px;
+              // padding: 25px 10px 10px 10px;
+              padding: 40px 10px 20px 10px;
               width: 33%;
               vertical-align: top;
               @include tb() {
@@ -34,10 +41,15 @@
               }
             }
             & td {
-               padding: 25px 10px 10px 10px;
+              //  padding: 25px 10px 10px 10px;
+                padding: 40px 10px 20px 10px;
               & a {
-                color: #fff;
-                line-height: 25px;
+                color:#00bfff	;
+                line-height: 40px;
+                font-size: 1.1em;
+                &:hover {
+                  opacity: 0.5;
+                }
               }
             }
           }

@@ -36,15 +36,15 @@ body {
 
 .heading {
 	color: #000;
-	font-size: 2.0em;
+	font-size: 2.5em;
 	font-weight: bold;
 	position: relative;
 	text-align: center;
 }
 
 .sub-title {
-	font-size: 1.5em;
-	margin: 80px 0 20px;
+	font-size: 1.0em;
+	margin: 15px 0 0;
 	text-align: center;
 }
 
@@ -2134,11 +2134,11 @@ textarea {
 }
 
 #company .company {
-	padding: 100px;
+	padding: 200px 100px 80px;
 }
 
 #company .company-area {
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 #company .company-area table {
@@ -2146,23 +2146,28 @@ textarea {
 }
 
 #company .company-area table tbody tr {
-	border-bottom: 1px solid #fff;
+	border: 1px solid #b0c4de;
 }
 
 #company .company-area table tbody tr th {
 	font-size: 1.3em;
-	padding: 25px 10px 10px 10px;
+	padding: 40px 10px 20px 10px;
 	vertical-align: top;
 	width: 33%;
 }
 
 #company .company-area table tbody tr td {
-	padding: 25px 10px 10px 10px;
+	padding: 40px 10px 20px 10px;
 }
 
 #company .company-area table tbody tr td a {
-	color: #fff;
-	line-height: 25px;
+	color: #00bfff;
+	font-size: 1.1em;
+	line-height: 40px;
+}
+
+#company .company-area table tbody tr td a:hover {
+	opacity: 0.5;
 }
 
 /* contact */
@@ -2409,7 +2414,7 @@ textarea {
 }
 
 #company .company {
-	padding: 0;
+	padding: 100px;
 }
 
 #company .company-area table tbody tr th {
@@ -2546,6 +2551,14 @@ textarea {
 
 #company .company-top {
 	height: 200px;
+}
+
+#company .company {
+	padding: 100px 0 0;
+}
+
+#company .company-area {
+	padding: 20px;
 }
 
 #contact .contact-top {
