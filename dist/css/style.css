@@ -2115,6 +2115,13 @@ textarea {
 
 /* company */
 
+#company .company-top {
+	background: url("../../src/img/ios-3.jpg") center;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+}
+
 #company .company {
 	padding: 100px;
 }
@@ -2474,6 +2481,10 @@ textarea {
 	text-align: center;
 }
 
+.footer-item + .footer-item {
+	display: block;
+}
+
 .footer-item a:hover {
 	border-bottom: none;
 }
@@ -2516,6 +2527,10 @@ textarea {
 }
 
 #pricelist .pricelist-top {
+	height: 200px;
+}
+
+#company .company-top {
 	height: 200px;
 }
 
