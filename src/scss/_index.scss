@@ -27,16 +27,6 @@
 // ==================================
 .hero {
   position: relative;
-  // .slider-text {
-  //   position: absolute; //swiper-container外で、置くとnavの上に来てしまう。
-  //   z-index: 5;
-  //   font-size: 2.5em;
-  //   color: #fff;
-  //   width: 100%;
-  //   top: 45%;
-  //   text-align: center;
-  //   font-weight: bold;
-  // }
   .slider {
     &-inner {
         position: absolute;

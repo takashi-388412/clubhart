@@ -12,15 +12,15 @@ $(function () {
   });
 });
 // sticky header
-$(function () {
-  jQuery(window).on('scroll', function ($) {
-    if (550 < jQuery(this).scrollTop()) {
-      jQuery('#header').addClass('m_scroll');
-    } else {
-      jQuery('#header').removeClass('m_scroll');
-    }
-  });
-});
+// $(function () {
+//   jQuery(window).on('scroll', function ($) {
+//     if (550 < jQuery(this).scrollTop()) {
+//       jQuery('#header').addClass('m_scroll');
+//     } else {
+//       jQuery('#header').removeClass('m_scroll');
+//     }
+//   });
+// });
 //hamberger-menu click(open close)
 $(function () {
   var sp_menu = $('.hamberger-menu');
