@@ -383,6 +383,8 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
@@ -496,10 +498,6 @@ body {
 #index .sns-title {
 	margin: 15px;
 	text-align: center;
-}
-
-#index .sns-left {
-	width: 100%;
 }
 
 #index .store .scroll-area {
@@ -2260,7 +2258,7 @@ textarea {
 	left: 30%;
 }
 
-#index .service-area {
+#index .service-inner {
 	padding: 20px;
 }
 
