@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CLUBHART</title>
+  <title>株式会社FREE</title>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+  <!-- font-awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
   <!-- swiper.js -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
@@ -16,14 +19,19 @@
   <div class="wrapper">
     <!-- header -->
     <header id="header">
-      <div class="clearfix">
-        <!-- title -->
-        <h1 class="site-title"><a href="index.html">FREE!</a></h1>
+      <div class="header-inner">
+        <!-- logo -->
+        <div class="site-logo">
+          <a href="index.html">
+            <img src="src/img/site_logo.jpeg" alt="FREE!のロゴ">
+          </a>
+        </div>
         <!-- global_nav -->
         <nav class="nav">
           <ul class="nav-list">
             <il class="nav-item"><a href="index.html">HOME</a></il>
-            <il class="nav-item"><a href="pricelist.html">SERVICE</a></il>
+            <il class="nav-item"><a href="service.html">SERVICE</a></il>
+            <il class="nav-item"><a href="company.html">COMPANY</a></il>
             <il class="nav-item"><a href="contact.html">CONTACT</a></il>
           </ul>
         </nav>
@@ -48,27 +56,27 @@
       <div class="swiper-container">
       <!-- Additional required wrapper -->
         <!-- slider text -->
-        <div class="slider-inner">
+        <!-- <div class="slider-inner">
             <img class="slider-logo"src="src/img/site-logo.jpg" alt="">
-        </div>
+        </div> -->
         <!-- slider image -->
         <div class="swiper-wrapper">
           <!-- Slides1 -->
           <div class="swiper-slide">
-            <div class="slide-img" style="background-image: url('./src/img/ios.jpg');"></div>
+            <div class="slide-img" style="background-image: url('./src/img/ios-9.jpg');"></div>
           </div>
           <!-- Slides2 -->
           <div class="swiper-slide">
-            <div class="slide-img" style="background-image: url('./src/img/ios-3.jpg');"></div>
+            <div class="slide-img" style="background-image: url('./src/img/ios-2.jpg');"></div>
           </div>
           <!-- Slides3 -->
-          <!-- <div class="swiper-slide">
+          <div class="swiper-slide">
             <div class="slide-img" style="background-image: url('./src/img/ios-6.jpg');"></div>
-          </div> -->
+          </div>
           <!-- Slides4 -->
-          <!-- <div class="swiper-slide">
-            <div class="slide-img" style="background-image: url('./src/img/car4.jpg');"></div>
-          </div> -->
+          <div class="swiper-slide">
+            <div class="slide-img" style="background-image: url('./src/img/ios-4.jpg');"></div>
+          </div>
         </div>
       </div>
       </section>
@@ -76,19 +84,19 @@
       <!-- content -->
       <div id="content-wrapper">
       <!-- INTRO -->
-      <section class="about fade-up">
-        <h2 class="heading">INTRODUCTION</h2>
-        <div class="about-area">
+      <section class="about">
+       <div class="about-area fade-up">
+          <h2 class="heading">INTRODUCT</h2>
           <div class="about-inner">
-            <!-- <img class="about-image" src="src/img/logo.jpg" alt="logo画像"> -->
-            <h3 class="about-description">
-              お車のお悩み何でもご相談下さい。
-            </h3>
-            <p class="about-text">
-              お車を綺麗にする事からお車の入れ替えまで<br>
-              FREEは全力であなたをサポートします。<br>
-            </p>
-          </div>
+              <!-- <img class="about-image" src="src/img/logo.jpg" alt="logo画像"> -->
+              <h3 class="about-description">
+                お車のお悩み何でもご相談下さい。
+              </h3>
+              <p class="about-text">
+                お車を綺麗にする事からお車の入れ替えまで<br>
+                FREEは全力であなたをサポートします。<br>
+              </p>
+           </div>
           <!-- contact-button -->
           <a class="btn" href="contact.html">CONTACT</a>
           <!-- scroll-down button -->
@@ -99,8 +107,8 @@
       </section>
       <!-- serives -->
       <section class="service fade-up" id="1">
-        <h2 class="heading">SERVICE</h2>
         <div class="service-area">
+           <h2 class="heading">SERVICE</h2>
           <div class="service-inner">
             <!-- 1行目 -->
             <div class="service-row1">
@@ -184,9 +192,14 @@
         <h2 class="none">SNS</h2>
         <div class="sns-area">
           <div class="sns-inner clearfix">
+            <!-- <div class="sns-button">
+              <a class="fb" href="#">
+                <i class="fab fa-facebook fa-5x"></i>
+              </a>
+            </div> -->
+            <h2 class="heading">FACEBOOK</h2>
             <!-- sns-left -->
             <div class="sns-left">
-              <h3 class="sub-title">FACEBOOK</h2>
               <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fja-jp.facebook.com%2FFree.co.ltd&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> -->
               <div class="iframe-center">
               <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fja-jp.facebook.com%2FFree.co.ltd&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
@@ -202,240 +215,242 @@
       </section>
   <!-- STORES -->
     <section class="store">
-      <h3 class="sub-title">SPASHAN　販売店</h2>
       <div class="scroll-area">
-        <ul class="scroll-list">
-          <li class="scroll-item">
-            <time class="company">塚田ボデー　株式会社WELL-B</time>
-            <span class="address">北海道釧路市星が浦大通り1丁目2-28</span>
-            <span class="nubmer">0154-51-7788</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">UDトラックス道東株式会社 釧路支店</time>
-            <span class="address">北海道釧路市鳥取大通6丁目8-11</span>
-            <span class="nubmer">0154-51-3361</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">UDトラックス道東株式会社 帯広支店</time>
-            <span class="address">北海道帯広市西21条北１丁目3-12</span>
-            <span class="nubmer">0155-37-2271</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">UDトラックス道東株式会社 北見支店</time>
-            <span class="address">北海道北見市東三輪１丁目28番2号</span>
-            <span class="nubmer">0157-24-8551</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社　畑中自動車</time>
-            <span class="address">北海道旭川市永山3条24丁目2-8</span>
-            <span class="nubmer">0166-85-7217</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">トータルカーオフィスブレイク</time>
-            <span class="address">北海道音更郡音更町字音更西3線8-52</span>
-            <span class="nubmer">090-2698-9750</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">有限会社　カークラフト</time>
-            <span class="address">北海道北広島市西の里1丁目1-11</span>
-            <span class="nubmer">011-375-5353</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">リベラルファクトリー　ブリッジ</time>
-            <span class="address">北海道釧路市星が浦南２丁目７-６</span>
-            <span class="nubmer">0154-53-7797</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社苫小牧イエローハット　苫小牧店</time>
-            <span class="address">北海道苫小牧市明野新町１丁目２－２３</span>
-            <span class="nubmer">0144-57-5550</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社苫小牧イエローハット　苫小牧澄川店</time>
-            <span class="address">北海道苫小牧市澄川町1-2-5</span>
-            <span class="nubmer">0144-61-5000</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社苫小牧イエローハット　千歳店</time>
-            <span class="address">北海道千歳市住吉3-2-5</span>
-            <span class="nubmer">0123-26-0588</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社苫小牧イエローハット　帯広店</time>
-            <span class="address">北海道帯広市西5条南16-6</span>
-            <span class="nubmer">0155-26-1680</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社苫小牧イエローハット　静内店</time>
-            <span class="address">北海道日高郡新ひだか町静内木場町1-1-101</span>
-            <span class="nubmer">0146-42-1119</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社苫小牧イエローハット　桂木店</time>
-            <span class="address">北海道釧路郡釧路町桂木4-23</span>
-            <span class="nubmer">0154-38-1680</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社苫小牧イエローハット　星が浦店</time>
-            <span class="address">北海道釧路市星が浦大通3丁目5-1</span>
-            <span class="nubmer">0154-55-5535</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社苫小牧イエローハット　室蘭店</time>
-            <span class="address">北海道室蘭市宮の森町4-22-10</span>
-            <span class="nubmer">0143-47-6660</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社苫小牧イエローハット　永山店</time>
-            <span class="address">北海道旭川市永山10条5-1-3</span>
-            <span class="nubmer">0166-46-1680</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社苫小牧イエローハット　旭川宮前店</time>
-            <span class="address">北海道旭川市宮前1-4-1-15</span>
-            <span class="nubmer">0166-38-8125</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社苫小牧イエローハット　留萌店</time>
-            <span class="address">北海道留萌市花園町4丁目2-2</span>
-            <span class="nubmer">0164-49-5121</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社苫小牧イエローハット　伊達船岡店</time>
-            <span class="address">北海道伊達市舟岡町200-129</span>
-            <span class="nubmer">0142-22-8800</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">半田ボデー工場</time>
-            <span class="address">北海道根室市穂香94-2</span>
-            <span class="nubmer">0153-23-2384</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">東北海道日野自動車</time>
-            <span class="address">北海道釧路市星が浦大通3丁目3-36</span>
-            <span class="nubmer">0154-51-0153</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">東北海道いすゞ自動車株式会社</time>
-            <span class="address">北海道釧路市鳥取南5丁目11-8</span>
-            <span class="nubmer">0154-51-2488</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">一井自動車</time>
-            <span class="address">北海道厚岸郡浜中町仲の浜36</span>
-            <span class="nubmer">0154-40-5488</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">ワンズフォート</time>
-            <span class="address">北海道釧路市星が浦大通4丁目5-14</span>
-            <span class="nubmer">0154-52-5799</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社　タイヤサービス釧路</time>
-            <span class="address">北海道釧路市星が浦大通3丁目6-1</span>
-            <span class="nubmer">0154-51-3316</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社デフクルー</time>
-            <span class="address">北海道釧路市興津4丁目12-18</span>
-            <span class="nubmer">0154-65-6013</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社　CPSコーポレーション</time>
-            <span class="address">北海道登別市栄町3丁目12-1</span>
-            <span class="nubmer">0143-83-5533</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">有限会社　ズーム　</time>
-            <span class="address">北海道北見市大正140-10</span>
-            <span class="nubmer">0157-66-5033</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">ジャパンエムロジックス　株式会社</time>
-            <span class="address">北海道札幌市手稲区宮の沢1条2丁目2-18</span>
-            <span class="nubmer">011-666-1100</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">有限会社　フィスト</time>
-            <span class="address">北海道旭川市東7条3丁目1-16</span>
-            <span class="nubmer">0166-29-1230</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社　G-MAX</time>
-            <span class="address">北海道帯広市西4条南17丁目3</span>
-            <span class="nubmer">0155-66-6497</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社　大井機販</time>
-            <span class="address">北海道網走郡美幌町美禽184-7</span>
-            <span class="nubmer">0152-73-2333</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">有限会社　北立　GARＡGE VOX</time>
-            <span class="address">北海道旭川市緑町19-2880</span>
-            <span class="nubmer">0166-52-3311</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社　Avanty</time>
-            <span class="address">北海道帯広市西18条北1丁目9-12</span>
-            <span class="nubmer">0155-36-2351</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">(株)冨士トレーラー製作所酒田営業所</time>
-            <span class="address">山形県酒田市こがね町2丁目1-10</span>
-            <span class="nubmer">0234-23-3791</span>
-            <span class="nubmer">ＦＡＸ 0234-23-3790</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">TRESPHERE</time>
-            <span class="address">北海道登別市若草町3丁目9-12</span>
-            <span class="nubmer">0143-57-6205</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社　向田自動車</time>
-            <span class="address">北海道岩見沢市大和二条9丁目7</span>
-            <span class="nubmer">0126-22-4131</span>
-            <span class="nubmer">FAX 0126-24-0755</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社　ホクレン油機サービス</time>
-            <span class="address">北海道旭川市永山2条13丁目1-28</span>
-            <span class="nubmer">0166-48-1100</span>
-            <span class="nubmer">FAX 0166-47-9658</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">株式会社　ワンネクト</time>
-            <span class="address">埼玉県さいたま市見沼区南中野1066-1</span>
-            <span class="nubmer">080-1747-5038</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">CREATION(クレアシオン)</time>
-            <span class="address">帯広市西9条北7丁目8-15 BIG ISLAND 3-E</span>
-            <span class="nubmer">080-3231-6273</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">ガレージミヤジマ</time>
-            <span class="address">北海道雨竜郡北竜町字板谷107-1</span>
-            <span class="nubmer">0164-34-3560</span>
-            <span class="nubmer">FAX 0164-34-3562</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">合同会社カーピカ</time>
-            <span class="address">北海道釧路市星が浦北3丁目1-17</span>
-            <span class="nubmer">090-5956-7808</span>
-          </li>
-          <li class="scroll-item">
-            <time class="company">X.FACTORY(エクス・ファクトリー)</time>
-            <span class="address">北海道岩内郡共和町南幌似7-4</span>
-            <span class="nubmer">0135-73--2614</span>
-          </li>
-        </ul>
+        <h2 class="heading">SPASHAN　販売店</h2>
+        <div class="scroll-inner">
+          <ul class="scroll-list">
+            <li class="scroll-item">
+              <time class="company">塚田ボデー　株式会社WELL-B</time>
+              <span class="address">北海道釧路市星が浦大通り1丁目2-28</span>
+              <span class="nubmer">0154-51-7788</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">UDトラックス道東株式会社 釧路支店</time>
+              <span class="address">北海道釧路市鳥取大通6丁目8-11</span>
+              <span class="nubmer">0154-51-3361</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">UDトラックス道東株式会社 帯広支店</time>
+              <span class="address">北海道帯広市西21条北１丁目3-12</span>
+              <span class="nubmer">0155-37-2271</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">UDトラックス道東株式会社 北見支店</time>
+              <span class="address">北海道北見市東三輪１丁目28番2号</span>
+              <span class="nubmer">0157-24-8551</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社　畑中自動車</time>
+              <span class="address">北海道旭川市永山3条24丁目2-8</span>
+              <span class="nubmer">0166-85-7217</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">トータルカーオフィスブレイク</time>
+              <span class="address">北海道音更郡音更町字音更西3線8-52</span>
+              <span class="nubmer">090-2698-9750</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">有限会社　カークラフト</time>
+              <span class="address">北海道北広島市西の里1丁目1-11</span>
+              <span class="nubmer">011-375-5353</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">リベラルファクトリー　ブリッジ</time>
+              <span class="address">北海道釧路市星が浦南２丁目７-６</span>
+              <span class="nubmer">0154-53-7797</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社苫小牧イエローハット　苫小牧店</time>
+              <span class="address">北海道苫小牧市明野新町１丁目２－２３</span>
+              <span class="nubmer">0144-57-5550</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社苫小牧イエローハット　苫小牧澄川店</time>
+              <span class="address">北海道苫小牧市澄川町1-2-5</span>
+              <span class="nubmer">0144-61-5000</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社苫小牧イエローハット　千歳店</time>
+              <span class="address">北海道千歳市住吉3-2-5</span>
+              <span class="nubmer">0123-26-0588</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社苫小牧イエローハット　帯広店</time>
+              <span class="address">北海道帯広市西5条南16-6</span>
+              <span class="nubmer">0155-26-1680</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社苫小牧イエローハット　静内店</time>
+              <span class="address">北海道日高郡新ひだか町静内木場町1-1-101</span>
+              <span class="nubmer">0146-42-1119</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社苫小牧イエローハット　桂木店</time>
+              <span class="address">北海道釧路郡釧路町桂木4-23</span>
+              <span class="nubmer">0154-38-1680</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社苫小牧イエローハット　星が浦店</time>
+              <span class="address">北海道釧路市星が浦大通3丁目5-1</span>
+              <span class="nubmer">0154-55-5535</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社苫小牧イエローハット　室蘭店</time>
+              <span class="address">北海道室蘭市宮の森町4-22-10</span>
+              <span class="nubmer">0143-47-6660</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社苫小牧イエローハット　永山店</time>
+              <span class="address">北海道旭川市永山10条5-1-3</span>
+              <span class="nubmer">0166-46-1680</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社苫小牧イエローハット　旭川宮前店</time>
+              <span class="address">北海道旭川市宮前1-4-1-15</span>
+              <span class="nubmer">0166-38-8125</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社苫小牧イエローハット　留萌店</time>
+              <span class="address">北海道留萌市花園町4丁目2-2</span>
+              <span class="nubmer">0164-49-5121</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社苫小牧イエローハット　伊達船岡店</time>
+              <span class="address">北海道伊達市舟岡町200-129</span>
+              <span class="nubmer">0142-22-8800</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">半田ボデー工場</time>
+              <span class="address">北海道根室市穂香94-2</span>
+              <span class="nubmer">0153-23-2384</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">東北海道日野自動車</time>
+              <span class="address">北海道釧路市星が浦大通3丁目3-36</span>
+              <span class="nubmer">0154-51-0153</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">東北海道いすゞ自動車株式会社</time>
+              <span class="address">北海道釧路市鳥取南5丁目11-8</span>
+              <span class="nubmer">0154-51-2488</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">一井自動車</time>
+              <span class="address">北海道厚岸郡浜中町仲の浜36</span>
+              <span class="nubmer">0154-40-5488</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">ワンズフォート</time>
+              <span class="address">北海道釧路市星が浦大通4丁目5-14</span>
+              <span class="nubmer">0154-52-5799</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社　タイヤサービス釧路</time>
+              <span class="address">北海道釧路市星が浦大通3丁目6-1</span>
+              <span class="nubmer">0154-51-3316</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社デフクルー</time>
+              <span class="address">北海道釧路市興津4丁目12-18</span>
+              <span class="nubmer">0154-65-6013</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社　CPSコーポレーション</time>
+              <span class="address">北海道登別市栄町3丁目12-1</span>
+              <span class="nubmer">0143-83-5533</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">有限会社　ズーム　</time>
+              <span class="address">北海道北見市大正140-10</span>
+              <span class="nubmer">0157-66-5033</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">ジャパンエムロジックス　株式会社</time>
+              <span class="address">北海道札幌市手稲区宮の沢1条2丁目2-18</span>
+              <span class="nubmer">011-666-1100</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">有限会社　フィスト</time>
+              <span class="address">北海道旭川市東7条3丁目1-16</span>
+              <span class="nubmer">0166-29-1230</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社　G-MAX</time>
+              <span class="address">北海道帯広市西4条南17丁目3</span>
+              <span class="nubmer">0155-66-6497</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社　大井機販</time>
+              <span class="address">北海道網走郡美幌町美禽184-7</span>
+              <span class="nubmer">0152-73-2333</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">有限会社　北立　GARＡGE VOX</time>
+              <span class="address">北海道旭川市緑町19-2880</span>
+              <span class="nubmer">0166-52-3311</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社　Avanty</time>
+              <span class="address">北海道帯広市西18条北1丁目9-12</span>
+              <span class="nubmer">0155-36-2351</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">(株)冨士トレーラー製作所酒田営業所</time>
+              <span class="address">山形県酒田市こがね町2丁目1-10</span>
+              <span class="nubmer">0234-23-3791</span>
+              <span class="nubmer">ＦＡＸ 0234-23-3790</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">TRESPHERE</time>
+              <span class="address">北海道登別市若草町3丁目9-12</span>
+              <span class="nubmer">0143-57-6205</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社　向田自動車</time>
+              <span class="address">北海道岩見沢市大和二条9丁目7</span>
+              <span class="nubmer">0126-22-4131</span>
+              <span class="nubmer">FAX 0126-24-0755</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社　ホクレン油機サービス</time>
+              <span class="address">北海道旭川市永山2条13丁目1-28</span>
+              <span class="nubmer">0166-48-1100</span>
+              <span class="nubmer">FAX 0166-47-9658</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">株式会社　ワンネクト</time>
+              <span class="address">埼玉県さいたま市見沼区南中野1066-1</span>
+              <span class="nubmer">080-1747-5038</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">CREATION(クレアシオン)</time>
+              <span class="address">帯広市西9条北7丁目8-15 BIG ISLAND 3-E</span>
+              <span class="nubmer">080-3231-6273</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">ガレージミヤジマ</time>
+              <span class="address">北海道雨竜郡北竜町字板谷107-1</span>
+              <span class="nubmer">0164-34-3560</span>
+              <span class="nubmer">FAX 0164-34-3562</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">合同会社カーピカ</time>
+              <span class="address">北海道釧路市星が浦北3丁目1-17</span>
+              <span class="nubmer">090-5956-7808</span>
+            </li>
+            <li class="scroll-item">
+              <time class="company">X.FACTORY(エクス・ファクトリー)</time>
+              <span class="address">北海道岩内郡共和町南幌似7-4</span>
+              <span class="nubmer">0135-73--2614</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <!-- OVERVIEW -->
-    <section class="overview">
+    <!-- <section class="company">
       <h2 class="heading">OVERVIEW</h2>
-      <div class="overview-area">
+      <div class="company-area">
         <table>
           <tbody>
             <tr>
@@ -447,10 +462,21 @@
               <td>CLUBHART</td>
             </tr>
             <tr>
+              <th>設立日</th>
+              <td>2012年9月11日</td>
+            </tr>
+            <tr>
               <th>代表取締役</th>
               <td>大野 寛将</td>
             </tr>
             <tr>
+              <th>所在地</th>
+              <td>北海道釧路市星が浦大通３丁目２番６号</td>
+            </tr>
+            <tr>
+              <th>電話番号</th>
+              <td>0154-64-9555</td>
+            </tr>
               <th>事業内容</th>
               <td>自動車販売（新車、中古車）買取、整備、鈑金塗装、自動車部品、用品の輸入、製造、加工販売</td>
             </tr>
@@ -473,7 +499,7 @@
           </tbody>
         </table>
       </div>
-    </section>
+    </section> -->
   <!-- scroll-top -->
     <div class="scroll">
         <a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
@@ -484,9 +510,8 @@
       <div class="footer-content clearfix">
           <!-- 背景画像 透過 -->
         <div class="footer-mask">
-          <div class="footer-left">
+          <!-- <div class="footer-left">
           <table>
-            <!-- 会社名 -->
             <tr>
               <td>会社名:</td>
               <td>株式会社FREE</td>
@@ -496,30 +521,28 @@
               <td>設立日：</td>
               <td>2012年9月11日</td>
             </tr>
-            <!-- 電話番号 -->
             <tr>
               <td>Tel:</td>
               <td>0154-64-9555</td>
             </tr>
             <tr>
-            <!-- 所在地 -->
             <tr>
               <td>所在地:</td>
               <td>北海道釧路市星が浦大通３丁目２番６号</td>
             </tr>
           </table>
-        </div>
+        </div> -->
         <!-- footer-nav -->
         <div class="footer-right">
           <ul class="footer-nav">
             <li class="footer-item"><a href="index.html">HOME</a></li>
-            <li class="footer-item"><a href="pricelist.html">SERVICE</a></li>
+            <li class="footer-item"><a href="service.html">SERVICE</a></li>
+            <li class="footer-item"><a href="company.html">COMPANY</a></li>
             <li class="footer-item"><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
       </div>
     </div>
-    </footer>
       <!-- copyright -->
       <footer class="footer">
         <p class="copyright">copyright</p>
@@ -531,12 +554,12 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <!-- particles.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-<script src="./src/particlesjs-config_move.js"></script>
+<script src="./src/js/particlesjs-config_move.js"></script>
 <!-- <script src="./src/particlesjs-config.js"></script> -->
 <!-- swiper.js -->
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 <!-- js -->
-<!-- <script src="./src/app.js"></script> -->
+<!-- <script src="./src/js/app.js"></script> -->
 <script src="./dist/js/bundle.js"></script>
 </body>
 </html>
