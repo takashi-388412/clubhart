@@ -170,8 +170,8 @@
     position: relative;
     overflow: hidden;
     background-image: linear-gradient(to bottom, #ffffff 0%, ffffff 70%);
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 180px;
     border: 1px solid #000;
     @include tb() {
       display: block;
@@ -200,7 +200,7 @@
     & h2 {
       margin: 0;
       width: 100%;
-      padding: 20px;
+      padding: 10px;
       // color: #0A79E8;
       color: #fff;
       text-align: center;
