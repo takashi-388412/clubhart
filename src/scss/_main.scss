@@ -63,6 +63,12 @@ body {
   font-size: 2.5em;
   font-weight: bold;
   color: #000;
+  @include tb() {
+    font-size: 1.8em;
+  }
+  @include mq() {
+    font-size: 1.6em;
+  }
 }
 .sub-title {
   text-align: center;
@@ -105,7 +111,7 @@ body {
   text-align: center;
   z-index: 9999;
   @include mq() {
-    // margin-top: 50px;
+    margin: 50px 0;
   }
   &-top {
     // margin-top: 100px;
@@ -334,13 +340,17 @@ transform : translate(0, 0);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; //背景画像は中央を軸に表示させる
+    @include mq() {
+      height: 200px;
+    }
   }
   &-mask {
     background:rgba(0,0,0,0.7);
     padding: 50px 50px 0;
     height: 400px;
     @include mq() {
-      padding: 50px 10px 0;
+      height: 200px;
+      padding: 20px 0 0;
     }
   }
   &-left {

@@ -77,8 +77,11 @@
 // ABOUT
 // ==================================
 .about {
-  padding: 80px 0;
+  padding: 80px;
   background-color: rgba(204,204,204,0.2);
+  @include tb () {
+    padding: 50px 10px 20px;
+  }
   
   &-area {
     width: 100%;
@@ -86,9 +89,10 @@
   }
   &-inner {
     width: 50%;
-    margin: 50px auto 0;
+    margin: 60px auto 0;
     @include mq() {
     width: 100%;
+    margin: 30px auto 0;
     }
   }
   &-image {
@@ -102,26 +106,34 @@
   &-description {
     margin-bottom: 10px;
     font-size: 1.5em;
+    @include tb() { 
+      font-size: 1.2em;
+    }
   }
   &-text {
     font-size: 1.2em;
     line-height: 1.8em;
     margin-bottom: 20px;
+    @include tb() {
+      font-size: .9em;
+    }
   }
 }
 // ==================================
 // SERVICE
 // ==================================
 .service {
-  // padding: 80px 0;
   padding: 80px;
+  @include tb() {
+    padding: 50px 10px 20px;
+  }
   &-area {
 
   }
    &-inner {
-    padding: 80px 40px 0;
+    padding: 60px 40px 0;
     @include tb() {
-      padding: 20px;
+      padding: 30px 10px 20px;
     }
    }
   &-row1 {
@@ -243,13 +255,16 @@
 .sns {
   padding: 80px 0;
   background-color: rgba(204,204,204,0.2);
+  @include tb() {
+    padding: 50px 20px 20px;
+  }
   &-area {
 
   }
   &-inner {
     // padding: 80px 40px 0;
     @include tb() {
-      // padding: 20px;
+      // padding: 30px;
     }
   }
   .iframe-center{
@@ -270,9 +285,9 @@
     text-align: center;
   }
   &-left {
-    padding: 80px 40px 0;
+    padding: 60px 40px 0;
     @include tb() {
-      padding: 20px;
+    padding: 30px 30px 20px;
     }
     // float: left;
     // width: 100%;
@@ -287,18 +302,20 @@
 // stores
 // ==================================
   .store {
-    // padding: 80px 0;
     padding: 80px;
+    @include tb() {
+      padding: 50px 10px 20px;
+    }
     .scroll {
       &-area {
-        // border: 5px dotted rgba(255,255,255,0.5);
+
       }
       &-inner {
-        margin: 80px 40px 0;
+        margin: 60px 40px 0;
         // border: 5px dotted #b0c4de;
         border: 1px solid #b0c4de;
         @include tb() {
-          margin: 20px;
+          margin:30px 10px 0;
         }
       }
       &-list {

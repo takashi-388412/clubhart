@@ -336,7 +336,7 @@ body {
 
 #index .about {
 	background-color: rgba(204, 204, 204, 0.2);
-	padding: 80px 0;
+	padding: 80px;
 }
 
 #index .about-area {
@@ -345,7 +345,7 @@ body {
 }
 
 #index .about-inner {
-	margin: 50px auto 0;
+	margin: 60px auto 0;
 	width: 50%;
 }
 
@@ -374,7 +374,7 @@ body {
 }
 
 #index .service-inner {
-	padding: 80px 40px 0;
+	padding: 60px 40px 0;
 }
 
 #index .service-row1 {
@@ -519,7 +519,7 @@ body {
 }
 
 #index .sns-left {
-	padding: 80px 40px 0;
+	padding: 60px 40px 0;
 }
 
 #index .store {
@@ -528,7 +528,7 @@ body {
 
 #index .store .scroll-inner {
 	border: 1px solid #b0c4de;
-	margin: 80px 40px 0;
+	margin: 60px 40px 0;
 }
 
 #index .store .scroll-list {
@@ -2341,6 +2341,10 @@ textarea {
 
 @media screen and (max-width: 960px) {
 
+.heading {
+	font-size: 1.8em;
+}
+
 .image-mask {
 	height: 300px;
 }
@@ -2454,8 +2458,24 @@ textarea {
 	left: 30%;
 }
 
+#index .about {
+	padding: 50px 10px 20px;
+}
+
+#index .about-description {
+	font-size: 1.2em;
+}
+
+#index .about-text {
+	font-size: .9em;
+}
+
+#index .service {
+	padding: 50px 10px 20px;
+}
+
 #index .service-inner {
-	padding: 20px;
+	padding: 30px 10px 20px;
 }
 
 #index .service-row1 {
@@ -2478,12 +2498,20 @@ textarea {
 	width: 100%;
 }
 
+#index .sns {
+	padding: 50px 20px 20px;
+}
+
 #index .sns-left {
-	padding: 20px;
+	padding: 30px 30px 20px;
+}
+
+#index .store {
+	padding: 50px 10px 20px;
 }
 
 #index .store .scroll-inner {
-	margin: 20px;
+	margin: 30px 10px 0;
 }
 
 #service .service-top {
@@ -2545,8 +2573,21 @@ textarea {
 
 @media screen and (max-width: 560px) {
 
+.heading {
+	font-size: 1.6em;
+}
+
+.scroll {
+	margin: 50px 0;
+}
+
+.footer-content {
+	height: 200px;
+}
+
 .footer-mask {
-	padding: 50px 10px 0;
+	height: 200px;
+	padding: 20px 0 0;
 }
 
 .footer-left {
@@ -2595,6 +2636,7 @@ textarea {
 }
 
 #index .about-inner {
+	margin: 30px auto 0;
 	width: 100%;
 }
 
