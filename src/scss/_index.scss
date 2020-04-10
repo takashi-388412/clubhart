@@ -27,37 +27,36 @@
 // ==================================
 .hero {
   position: relative;
-  .slider {
-    &-inner {
-        position: absolute;
-        top: 40%;
-        left: 40%;
-        z-index: 5;
-        opacity: 0.8;
-        @include tb() {
-          left: 30%;
-        }
-        @include mq() {
-          left: 23%;
-        }
-    }
-    &-logo {
-      width: 300px;
-      height: auto;
-      border-radius: 30%;
-        @include mq() {
-          width: 200px;
-        }
-    }
-  }
+  // .slider {
+    // &-inner {
+    //     position: absolute;
+    //     top: 40%;
+    //     left: 40%;
+    //     z-index: 5;
+    //     opacity: 0.8;
+    //     @include tb() {
+    //       left: 30%;
+    //     }
+    //     @include mq() {
+    //       left: 23%;
+    //     }
+    // }
+  //   &-logo {
+  //     width: 300px;
+  //     height: auto;
+  //     border-radius: 30%;
+  //       @include mq() {
+  //         width: 200px;
+  //       }
+  //   }
+  // }
   .slide {
     &-img {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
     width: 100%;
     background-position: center center; //背景画像は中央を軸に表示させる
-    height: 100vh;  //全画面表示
+    height: 80vh;  //全画面表示
     // mask
     background: url(https://glatchdesign.com/wp-content/uploads/2016/02/mountain0209.jpg) no-repeat center;
 

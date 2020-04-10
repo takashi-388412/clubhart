@@ -300,27 +300,12 @@ body {
 	position: relative;
 }
 
-#index .hero .slider-inner {
-	left: 40%;
-	opacity: 0.8;
-	position: absolute;
-	top: 40%;
-	z-index: 5;
-}
-
-#index .hero .slider-logo {
-	border-radius: 30%;
-	height: auto;
-	width: 300px;
-}
-
 #index .hero .slide-img {
 	background: url(https://glatchdesign.com/wp-content/uploads/2016/02/mountain0209.jpg) no-repeat center;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
-	height: 100vh;
+	height: 80vh;
 	width: 100%;
 }
 
@@ -2454,10 +2439,6 @@ textarea {
 	transform: translateY(-15px) rotate(45deg);
 }
 
-#index .hero .slider-inner {
-	left: 30%;
-}
-
 #index .about {
 	padding: 50px 10px 20px;
 }
@@ -2625,14 +2606,6 @@ textarea {
 
 #index #content-wrapper {
 	padding: 0;
-}
-
-#index .hero .slider-inner {
-	left: 23%;
-}
-
-#index .hero .slider-logo {
-	width: 200px;
 }
 
 #index .about-inner {
