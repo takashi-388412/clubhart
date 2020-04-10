@@ -360,6 +360,10 @@ body {
 	padding-top: 80px;
 }
 
+#index .service-inner {
+	padding: 80px 40px 0;
+}
+
 #index .service-row1 {
 	display: -webkit-box;
 	display: -ms-flexbox;
