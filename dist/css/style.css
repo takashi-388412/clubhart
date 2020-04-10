@@ -48,6 +48,11 @@ body {
 	text-align: center;
 }
 
+.image-mask {
+	background: rgba(0, 0, 0, 0.7);
+	height: 400px;
+}
+
 .none {
 	display: none;
 }
@@ -552,11 +557,30 @@ body {
 * pricelist
 * -------------------------------------------*/
 
-#pricelist .pricelist-top {
+#service .service-top {
 	background: url("../../src/img/ios-3.jpg") center;
 	background-size: cover;
-	height: 300px;
+	height: 400px;
+	margin: 100px 0;
+	position: relative;
 	width: 100%;
+}
+
+#service .service-top .service-text {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#service .service-top .heading {
+	color: #fff;
+}
+
+#service .service-top .sub-title {
+	color: #fff;
 }
 
 a {
@@ -2129,12 +2153,27 @@ textarea {
 #company .company-top {
 	background: url("../../src/img/ios-3.jpg") center;
 	background-size: cover;
-	height: 300px;
+	height: 400px;
+	margin-top: 100px;
+	position: relative;
 	width: 100%;
 }
 
-#company .company {
-	padding: 200px 100px 80px;
+#company .company-top .company-text {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#company .company-top .heading {
+	color: #fff;
+}
+
+#company .company-top .sub-title {
+	color: #fff;
 }
 
 #company .company-area {
@@ -2179,19 +2218,31 @@ textarea {
 #contact .contact-top {
 	background: url("../../src/img/ios-3.jpg") center;
 	background-size: cover;
-	height: 300px;
+	height: 400px;
+	margin-top: 100px;
+	position: relative;
 	width: 100%;
+}
+
+#contact .contact-top .contact-text {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#contact .contact-top .heading {
+	color: #fff;
+}
+
+#contact .contact-top .sub-title {
+	color: #fff;
 }
 
 #contact .contact {
 	margin: 20px;
-}
-
-#contact .contact .heading {
-	border-bottom: solid 1px black;
-	margin: 0 auto;
-	padding: 1em 0;
-	width: 40vw;
 }
 
 #contact .contact-wrapper {
@@ -2279,6 +2330,10 @@ textarea {
 }
 
 @media screen and (max-width: 960px) {
+
+.image-mask {
+	height: 300px;
+}
 
 .header-inner {
 	height: 70px;
@@ -2413,18 +2468,23 @@ textarea {
 	width: 100%;
 }
 
-#company .company {
-	padding: 100px;
+#service .service-top {
+	height: 300px;
+	margin: 60px 0;
+}
+
+#company .company-top {
+	height: 300px;
+	margin-top: 60px;
 }
 
 #company .company-area table tbody tr th {
 	font-size: 1.0em;
 }
 
-#contact .contact .heading {
-	font-size: 1.4em;
-	margin-bottom: 20px;
-	padding: .5em 0;
+#contact .contact-top {
+	height: 300px;
+	margin-top: 60px;
 }
 
 #contact .contact-wrapper {
@@ -2545,24 +2605,8 @@ textarea {
 	font-size: .8em;
 }
 
-#pricelist .pricelist-top {
-	height: 200px;
-}
-
-#company .company-top {
-	height: 200px;
-}
-
-#company .company {
-	padding: 100px 0 0;
-}
-
 #company .company-area {
 	padding: 20px;
-}
-
-#contact .contact-top {
-	height: 200px;
 }
 
 }

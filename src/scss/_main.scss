@@ -69,6 +69,14 @@ body {
   font-size: 1.0em;
   margin: 15px 0 0;
 }
+.image-mask {
+  background:rgba(0,0,0,0.7);
+  // padding: 50px 50px 0;
+  height: 400px;
+  @include tb() {
+    height: 300px;
+  }
+}
 //top-image の背景画像
 .none {
   display: none;

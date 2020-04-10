@@ -3,22 +3,32 @@
 // ==================================
 #company {
   .company-top {
+    position: relative;
     background: url('../../src/img/ios-3.jpg') center;
     background-size: cover;
     width: 100%;
-    height: 300px;
-    @include mq() {
-      height: 200px;
+    height: 400px;
+    margin-top: 100px;
+    @include tb() {
+      height: 300px;
+      margin-top: 60px;
+    }
+    & .company-text {
+    position: absolute; //上下中央寄せ
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // -webkit-transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
+    }
+    & .heading {
+      color: #fff;
+    }
+    & .sub-title {
+      color: #fff;
     }
   }
   .company {
-    padding: 200px 100px 80px;
-    @include tb() {
-      padding: 100px;
-    }
-    @include mq() {
-      padding: 100px 0 0;
-    }
     &-area {
         margin-top: 50px;
       @include mq () {
