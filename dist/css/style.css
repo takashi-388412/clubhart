@@ -79,7 +79,7 @@ body {
 }
 
 .scroll {
-	margin-top: 100px;
+	margin: 100px 0;
 	text-align: center;
 	z-index: 9999;
 }
@@ -289,7 +289,6 @@ body {
 }
 
 #index #content-wrapper {
-	padding: 100px 80px;
 	width: 100%;
 }
 
@@ -336,7 +335,8 @@ body {
 }
 
 #index .about {
-	padding-top: 80px;
+	background-color: rgba(204, 204, 204, 0.2);
+	padding: 80px 0;
 }
 
 #index .about-area {
@@ -370,7 +370,7 @@ body {
 }
 
 #index .service {
-	padding-top: 80px;
+	padding: 80px;
 }
 
 #index .service-inner {
@@ -499,8 +499,9 @@ body {
 	transform: translateY(0);
 }
 
-#index .sns-area {
-	padding: 100px 80px;
+#index .sns {
+	background-color: rgba(204, 204, 204, 0.2);
+	padding: 80px 0;
 }
 
 #index .sns .iframe-center {
@@ -517,8 +518,17 @@ body {
 	text-align: center;
 }
 
-#index .store .scroll-area {
-	border: 5px dotted rgba(255, 255, 255, 0.5);
+#index .sns-left {
+	padding: 80px 40px 0;
+}
+
+#index .store {
+	padding: 80px;
+}
+
+#index .store .scroll-inner {
+	border: 1px solid #b0c4de;
+	margin: 80px 40px 0;
 }
 
 #index .store .scroll-list {
@@ -2177,7 +2187,7 @@ textarea {
 }
 
 #company .company-area {
-	margin-top: 50px;
+	padding: 100px 0;
 }
 
 #company .company-area table {
@@ -2468,6 +2478,14 @@ textarea {
 	width: 100%;
 }
 
+#index .sns-left {
+	padding: 20px;
+}
+
+#index .store .scroll-inner {
+	margin: 20px;
+}
+
 #service .service-top {
 	height: 300px;
 	margin: 60px 0;
@@ -2527,10 +2545,6 @@ textarea {
 
 @media screen and (max-width: 560px) {
 
-.scroll {
-	margin-top: 50px;
-}
-
 .footer-mask {
 	padding: 50px 10px 0;
 }
@@ -2582,15 +2596,6 @@ textarea {
 
 #index .about-inner {
 	width: 100%;
-}
-
-#index .sns-area {
-	padding: 0;
-	padding: 80px 0;
-}
-
-#index .sns-inner {
-	border: none;
 }
 
 #index .sns .iframe-center iframe {
