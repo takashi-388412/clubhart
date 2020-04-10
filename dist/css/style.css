@@ -59,12 +59,13 @@ body {
 }
 
 .btn {
-	border-bottom: solid 2px white;
-	color: #fff;
+	border-bottom: solid 2px black;
+	color: black;
 	display: inline-block;
 	font-family: Orbitron, sans-serif;
 	padding: 15px;
 	text-decoration: none;
+	z-index: 9999;
 }
 
 .btn:hover {
@@ -75,10 +76,11 @@ body {
 .scroll {
 	margin-top: 100px;
 	text-align: center;
+	z-index: 9999;
 }
 
 .scroll-top {
-	color: #fff;
+	color: #8f8f8f;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 1.2em;
@@ -86,21 +88,16 @@ body {
 }
 
 .scroll-top:hover {
-	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-	color: limegreen;
-	-webkit-transform: translateY(-4px);
-	-ms-transform: translateY(-4px);
-	transform: translateY(-4px);
+	color: black;
 }
 
 .scroll-down {
-	color: #fff;
+	color: #8f8f8f;
 	text-decoration: none;
 }
 
 .scroll-down:hover {
-	color: limegreen;
+	color: black;
 }
 
 .scroll i {
