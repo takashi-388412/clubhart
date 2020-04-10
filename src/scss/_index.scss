@@ -77,8 +77,8 @@
 // ABOUT
 // ==================================
 .about {
-  padding: 80px;
-  background-color: rgba(204,204,204,0.2);
+  padding: 80px 80px 20px;
+  background-color: rgba(204,204,204,0.15);
   @include tb () {
     padding: 50px 10px 20px;
   }
@@ -172,7 +172,7 @@
     background-image: linear-gradient(to bottom, #ffffff 0%, ffffff 70%);
     width: 350px;
     height: 180px;
-    border: 1px solid #000;
+    border: 2px solid #000;
     @include tb() {
       display: block;
       width: 100%;
@@ -254,7 +254,7 @@
 // ==================================
 .sns {
   padding: 80px 0;
-  background-color: rgba(204,204,204,0.2);
+  background-color: rgba(204,204,204,0.15);
   @include tb() {
     padding: 50px 20px 20px;
   }
@@ -262,11 +262,23 @@
 
   }
   &-inner {
-    // padding: 80px 40px 0;
-    @include tb() {
-      // padding: 30px;
-    }
+
   }
+  // &-button {
+  //   text-align: center;
+  //   // padding: 30px;
+  //   @include mq() {
+  //     font-size: 12px;
+  //   }
+  //   .fa {
+  //    &-facebook {
+  //     color: #4169E1;
+  //    }
+  //   }
+  //   .fab:hover {
+  //     opacity: 0.5;
+  //   }
+  // }
   .iframe-center{
     text-align: center;
     @include mq() {

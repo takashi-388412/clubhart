@@ -9,7 +9,7 @@
 * -------------------------------------------*/
 
 body {
-	font-family: 'Montserrat',sans-serif;
+	font-family: 'Oswald', sans-serif,'Montserrat';
 	letter-spacing: 2px;
 	position: relative;
 }
@@ -221,12 +221,12 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #bbb;
-	height: 400px;
+	height: 300px;
 }
 
 .footer-mask {
 	background: rgba(0, 0, 0, 0.7);
-	height: 400px;
+	height: 300px;
 	padding: 50px 50px 0;
 }
 
@@ -335,8 +335,8 @@ body {
 }
 
 #index .about {
-	background-color: rgba(204, 204, 204, 0.2);
-	padding: 80px;
+	background-color: rgba(204, 204, 204, 0.15);
+	padding: 80px 80px 20px;
 }
 
 #index .about-area {
@@ -410,7 +410,7 @@ body {
 #index .service-item {
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(70%, ffffff));
 	background-image: linear-gradient(to bottom, #ffffff 0%, ffffff 70%);
-	border: 1px solid #000;
+	border: 2px solid #000;
 	color: #fff;
 	height: 180px;
 	overflow: hidden;
@@ -500,7 +500,7 @@ body {
 }
 
 #index .sns {
-	background-color: rgba(204, 204, 204, 0.2);
+	background-color: rgba(204, 204, 204, 0.15);
 	padding: 80px 0;
 }
 
@@ -2587,7 +2587,7 @@ textarea {
 
 .footer-mask {
 	height: 200px;
-	padding: 20px 0 0;
+	padding: 0;
 }
 
 .footer-left {
