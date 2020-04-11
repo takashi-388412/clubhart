@@ -2,6 +2,11 @@
 // company
 // ==================================
 #company {
+  .disable-auto-tel {
+    color: inherit;
+    text-decoration: none;
+    pointer-events: none;
+  }
   .company-top {
     position: relative;
     background: url('../../src/img/wash_slide.jpg') center;
