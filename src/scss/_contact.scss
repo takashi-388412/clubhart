@@ -142,6 +142,8 @@
         width: 10em;
         height: 4em;
         cursor: pointer;
+        -webkit-appearance: none;
+        border-radius: 0;
         @include tb() {
           height: 2em;
           margin-bottom: 20px;
