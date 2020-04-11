@@ -138,10 +138,10 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	height: 100px;
+	height: 80px;
 	left: 0;
 	min-width: 1260px;
-	padding: 20px;
+	padding: 10px 20px;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -153,16 +153,12 @@ body {
 	flex-basis: 300px;
 	font-weight: bold;
 	margin: 0 auto 0 0;
-	padding-left: 30px;
+	padding: 5px 0 0 30px;
 }
 
 .site-logo a {
-	color: #000;
-	font-size: 1.6em;
-	line-height: 1.6em;
-	position: relative;
+	display: block;
 	text-decoration: none;
-	z-index: 3;
 }
 
 .site-logo a:hover {
@@ -170,7 +166,7 @@ body {
 }
 
 .site-logo img {
-	width: 140px;
+	width: 120px;
 }
 
 .nav {
@@ -317,6 +313,15 @@ body {
 	position: absolute;
 	right: 0;
 	top: 0;
+}
+
+#index .swiper-slide-active .slide-img,
+#index .swiper-slide-duplicate-active .slide-img,
+#index .swiper-slide-prev .slide-img {
+	-webkit-animation: zoomUp 8s linear 0s;
+	-webkit-animation-fill-mode: both;
+	animation: zoomUp 8s linear 0s;
+	animation-fill-mode: both;
 }
 
 #index .about {
@@ -2335,7 +2340,7 @@ textarea {
 }
 
 .header-inner {
-	height: 70px;
+	height: 65px;
 	min-width: 0;
 	padding: 10px 15px;
 }
@@ -2343,7 +2348,7 @@ textarea {
 .site-logo {
 	-ms-flex-preferred-size: 0;
 	flex-basis: 0;
-	padding-left: 0;
+	padding: 0;
 }
 
 .site-logo img {
@@ -2627,6 +2632,34 @@ textarea {
 
 #company .company-area {
 	padding: 20px;
+}
+
+}
+
+@-webkit-keyframes zoomUp {
+
+0% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+100% {
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+}
+
+@keyframes zoomUp {
+
+0% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+100% {
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
 }
 
 }

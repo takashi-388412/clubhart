@@ -175,8 +175,10 @@ transform : translate(0, 0);
   position: fixed;
   min-width: 1260px;//最低でも1260px以上
   width: 100%;
-  height: 100px;
-  padding: 20px;
+  // height: 100px;
+  height: 80px;
+  // padding: 20px;
+  padding: 10px 20px;
   top: 0;
   left: 0;
   background-color: #000;
@@ -184,33 +186,34 @@ transform : translate(0, 0);
   display: flex;//site_logoとnav_item横並び
   @include tb () {
     min-width: 0;
-    height: 70px;
+    height: 65px;
     padding: 10px 15px;
   }
 }
 //logo
 .site-logo {
-  padding-left: 30px;
+  padding: 5px 0 0 30px;
   font-weight: bold;
   flex-basis: 300px;
   margin: 0 auto 0 0;
   @include tb() {
     flex-basis: 0;
-    padding-left: 0;
+    padding: 0;
   }
   & a {
-    position: relative; //z-indexを指定したいので,position指定
+    // position: relative; //z-indexを指定したいので,position指定
     text-decoration: none;
-    color: #000;
-    font-size: 1.6em;
-    line-height: 1.6em;
-    z-index: 3; //重なり 1番上
+    // color: #000;
+    display: block;
+    // font-size: 1.6em;
+    // z-index: 3; //重なり 1番上
     &:hover {
       color: #000;
     }
   }
   & img {
-    width: 140px;
+    // width: 140px;
+    width: 120px;
     @include tb() {
       width: 100px;
     }
