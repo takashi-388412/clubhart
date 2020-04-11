@@ -415,6 +415,7 @@ transform : translate(0, 0);
       color: #bbb;
       transition: color 0.15s;
       text-decoration: none;
+      display: block;
       &:hover {
       border-bottom: 2px dashed #777;
       color: #ddd;

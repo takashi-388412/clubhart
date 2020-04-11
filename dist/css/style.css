@@ -251,6 +251,7 @@ body {
 
 .footer-item a {
 	color: #bbb;
+	display: block;
 	text-decoration: none;
 	-webkit-transition: color 0.15s;
 	transition: color 0.15s;
