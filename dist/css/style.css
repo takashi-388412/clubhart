@@ -2644,6 +2644,10 @@ textarea {
 	padding: 20px;
 }
 
+#contact .contact-form textarea {
+	font-size: .8em;
+}
+
 }
 
 @-webkit-keyframes flash {
