@@ -229,6 +229,7 @@ transform : translate(0, 0);
   display: flex;
   justify-content: flex-start;//左につめて横並び
   line-height: 60px;
+  overflow:auto;
   @include tb() {
   position: absolute; 
   top: 0;
@@ -236,7 +237,8 @@ transform : translate(0, 0);
   // right: 0%;
   // background: rgba(0, 0, 0, .85);
   background: #000; 
-  width: 100%;
+  // width: 100%;
+  width: 100vw;
   height: 100vh;
   transition: .5s;
   //navgation_menu用
