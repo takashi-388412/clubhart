@@ -28,25 +28,25 @@
 .hero {
   position: relative;
   // .slider {
-    // &-inner {
-    //     position: absolute;
-    //     top: 40%;
-    //     left: 40%;
-    //     z-index: 5;
-    //     opacity: 0.8;
-    //     @include tb() {
-    //       left: 30%;
-    //     }
-    //     @include mq() {
-    //       left: 23%;
-    //     }
-    // }
-  //   &-logo {
-  //     width: 300px;
-  //     height: auto;
-  //     border-radius: 30%;
+  //   &-inner {
+  //       position: absolute;
+  //       top: 40%;
+  //       left: 40%;
+  //       z-index: 5;
+  //       opacity: 0.8;
+  //       @include tb() {
+  //         left: 30%;
+  //       }
   //       @include mq() {
-  //         width: 200px;
+  //         left: 25%;
+  //       }
+  //   }
+  //   &-logo {
+  //     width: 250px;
+  //     height: auto;
+  //     border-radius: 50%;
+  //       @include mq() {
+  //         width: 180px;
   //       }
   //   }
   // }
