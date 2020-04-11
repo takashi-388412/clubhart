@@ -282,6 +282,14 @@
 // SNS
 // ==================================
 .sns {
+  .heading {
+    &::before {
+      font-family: "Font Awesome 5 Brands";
+      content: '\f082';
+      color: #3B5998;
+      margin: 0 .3em 0 0;
+    }
+  }
   padding: 80px 0;
   background-color: rgba(204,204,204,0.15);
   @include tb() {
