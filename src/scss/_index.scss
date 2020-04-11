@@ -319,14 +319,15 @@
   .iframe-center{
     display: flex;
     justify-content: center; //中央寄せ
-    @include mq() {
+    // @include mq() {
   
-    }
+    // }
     iframe {
       width: 280px;
       height: 400px;
       @include mq() {
-        width: 100%;
+      // width: 280px;
+        // width: 100%;
       }
     }
   }
