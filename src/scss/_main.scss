@@ -93,6 +93,7 @@ body {
    clear: both;
  }
 .btn {
+  box-sizing: border-box;
   background-color: #8f8f8f;
   font-family: Orbitron, sans-serif;
   display: inline-block;
@@ -100,11 +101,11 @@ body {
   padding: 15px;
   color: black;
   z-index: 9999;
-  opacity: .8;
   transition: all .6s ease;
   &:hover {
+    color: white;
+    background-color: black;
     border-radius: 3000px;
-    opacity: 1;
     transform: rotate(720deg);
     -webkit-transform: rotate(720deg);
   }
