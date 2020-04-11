@@ -2644,6 +2644,22 @@ textarea {
 	padding: 20px;
 }
 
+#contact .contact-form input[type=text]:focus {
+	border: 2px solid limegreen;
+}
+
+#contact .contact-form input[type=email]:focus {
+	border: 2px solid limegreen;
+}
+
+#contact .contact-form textarea {
+	font-size: .8em;
+}
+
+#contact .contact-form textarea:focus {
+	border: 2px solid limegreen;
+}
+
 }
 
 @-webkit-keyframes flash {
