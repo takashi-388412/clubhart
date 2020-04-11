@@ -234,19 +234,6 @@ body {
 	padding: 50px 50px 0;
 }
 
-.footer-left {
-	float: left;
-}
-
-.footer-left table {
-	font-size: 1.1em;
-}
-
-.footer-left table tr {
-	font-size: 1.0em;
-	line-height: 1.5em;
-}
-
 .footer-right {
 	float: right;
 }
@@ -2204,19 +2191,19 @@ textarea {
 
 #company .company-area table tbody tr th {
 	font-size: 1.3em;
-	padding: 40px 10px 20px 10px;
+	padding: 20px 10px 15px;
 	vertical-align: top;
 	width: 33%;
 }
 
 #company .company-area table tbody tr td {
-	padding: 40px 10px 20px 10px;
+	padding: 20px 10px 15px;
 }
 
 #company .company-area table tbody tr td a {
 	color: #00bfff;
 	font-size: 1.1em;
-	line-height: 40px;
+	line-height: 25px;
 }
 
 #company .company-area table tbody tr td a:hover {
@@ -2525,7 +2512,11 @@ textarea {
 }
 
 #company .company-area table tbody tr th {
-	font-size: 1.0em;
+	font-size: 0.9em;
+}
+
+#company .company-area table tbody tr td {
+	font-size: 0.8em;
 }
 
 #contact .contact-top {
@@ -2588,19 +2579,6 @@ textarea {
 .footer-mask {
 	height: 200px;
 	padding: 0;
-}
-
-.footer-left {
-	float: initial;
-	margin-bottom: 30px;
-}
-
-.footer-left table {
-	margin: 0 auto;
-}
-
-.footer-left table tr {
-	font-size: 0.8em;
 }
 
 .footer-right {

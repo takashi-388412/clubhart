@@ -361,29 +361,29 @@ transform : translate(0, 0);
       padding: 0;
     }
   }
-  &-left {
-    float: left;
-    @include mq() {
-      float: initial;
-      margin-bottom: 30px;
-    }
+  // &-left {
+  //   float: left;
+  //   @include mq() {
+  //     float: initial;
+  //     margin-bottom: 30px;
+  //   }
 
-    & table {
-      font-size: 1.1em;
-    @include mq() {
-      margin: 0 auto;
-    }
-      & tr {
-        font-size: 1.0em;
-        line-height: 1.5em;
-        @include mq() {
-          font-size: 0.8em;
-        }
-      }
-      & td {
-      }
-    }
-  }
+  //   & table {
+  //     font-size: 1.1em;
+  //   @include mq() {
+  //     margin: 0 auto;
+  //   }
+  //     & tr {
+  //       font-size: 1.0em;
+  //       line-height: 1.5em;
+  //       @include mq() {
+  //         font-size: 0.8em;
+  //       }
+  //     }
+  //     & td {
+  //     }
+  //   }
+  // }
   &-right {
     float: right;
     @include mq() {
