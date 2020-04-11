@@ -507,7 +507,7 @@ body {
 
 #index .sns .iframe-center iframe {
 	height: 400px;
-	width: 280px;
+	width: 340px;
 }
 
 #index .sns-title {
@@ -2622,6 +2622,10 @@ textarea {
 #index .about-inner {
 	margin: 30px auto 0;
 	width: 100%;
+}
+
+#index .sns .iframe-center iframe {
+	width: 280px;
 }
 
 #index .store .scroll-list {
