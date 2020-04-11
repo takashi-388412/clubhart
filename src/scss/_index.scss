@@ -323,10 +323,10 @@
   
     // }
     iframe {
-      width: 280px;
+      width: 340px;
       height: 400px;
       @include mq() {
-      // width: 280px;
+      width: 280px;
         // width: 100%;
       }
     }
