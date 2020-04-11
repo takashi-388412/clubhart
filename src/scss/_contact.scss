@@ -99,6 +99,11 @@
         @include tb() {
           font-size: 0.8em;
         }
+        @include mq {
+          &:focus {
+            border: 2px solid limegreen;
+          }
+        }
       }
       input[type=email] {
         height: 2em;
@@ -106,6 +111,11 @@
         // width: 15em;
         @include tb() {
           font-size: 0.8em;
+        }
+        @include mq {
+          &:focus {
+            border: 2px solid limegreen;
+          }
         }
       }
       textarea {
@@ -118,6 +128,9 @@
         }
         @include mq {
           font-size: .8em;
+          &:focus {
+            border: 2px solid limegreen;
+          }
         }
       }
       //form button layout
