@@ -92,19 +92,23 @@ body {
    display: block;
    clear: both;
  }
- .btn {
-   font-family: Orbitron, sans-serif;
-   display: inline-block;
-   text-decoration: none;
-   padding: 15px;
-   color: black;
-   border-bottom: solid 2px black;
-   z-index: 9999;
-   &:hover {
-    background-color: #8f8f8f;
-    border-bottom: none;
-   }
- }
+.btn {
+  background-color: #8f8f8f;
+  font-family: Orbitron, sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  color: black;
+  z-index: 9999;
+  opacity: .8;
+  transition: all .6s ease;
+  &:hover {
+    border-radius: 3000px;
+    opacity: 1;
+    transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+  }
+}
 .scroll {
   // margin-top: 100px;
   margin: 80px 0;
