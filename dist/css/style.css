@@ -2156,6 +2156,12 @@ textarea {
 
 /* company */
 
+#company .disable-auto-tel {
+	color: inherit;
+	pointer-events: none;
+	text-decoration: none;
+}
+
 #company .company-top {
 	background: url("../../src/img/wash_slide.jpg") center;
 	background-size: cover;
