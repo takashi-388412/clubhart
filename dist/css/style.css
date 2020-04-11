@@ -213,12 +213,6 @@ body {
 	color: #fff;
 }
 
-.footer .copyright {
-	color: #bbb;
-	padding: 10px;
-	text-align: center;
-}
-
 .footer-content {
 	background-image: url(../../src/img/building.jpg);
 	background-position: center center;
@@ -2575,6 +2569,7 @@ textarea {
 
 .footer-content {
 	height: 200px;
+	padding-top: 25px;
 }
 
 .footer-mask {
