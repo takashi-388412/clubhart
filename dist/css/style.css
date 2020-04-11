@@ -2322,6 +2322,8 @@ textarea {
 }
 
 #contact .contact-form input[type=submit] {
+	-webkit-appearance: none;
+	border-radius: 0;
 	cursor: pointer;
 	display: inline-block;
 	height: 4em;
