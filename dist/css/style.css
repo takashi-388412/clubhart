@@ -492,12 +492,17 @@ body {
 }
 
 #index .sns .iframe-center {
-	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 #index .sns .iframe-center iframe {
-	height: 500px;
-	width: 340px;
+	height: 400px;
+	width: 280px;
 }
 
 #index .sns-title {
