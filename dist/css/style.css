@@ -146,10 +146,10 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	height: 100px;
+	height: 80px;
 	left: 0;
 	min-width: 1260px;
-	padding: 20px;
+	padding: 10px 20px;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -161,16 +161,12 @@ body {
 	flex-basis: 300px;
 	font-weight: bold;
 	margin: 0 auto 0 0;
-	padding-left: 30px;
+	padding: 5px 0 0 30px;
 }
 
 .site-logo a {
-	color: #000;
-	font-size: 1.6em;
-	line-height: 1.6em;
-	position: relative;
+	display: block;
 	text-decoration: none;
-	z-index: 3;
 }
 
 .site-logo a:hover {
@@ -178,7 +174,7 @@ body {
 }
 
 .site-logo img {
-	width: 140px;
+	width: 120px;
 }
 
 .nav {
@@ -217,12 +213,6 @@ body {
 	color: #fff;
 }
 
-.footer .copyright {
-	color: #bbb;
-	padding: 10px;
-	text-align: center;
-}
-
 .footer-content {
 	background-image: url(../../src/img/building.jpg);
 	background-position: center center;
@@ -236,19 +226,6 @@ body {
 	background: rgba(0, 0, 0, 0.7);
 	height: 300px;
 	padding: 50px 50px 0;
-}
-
-.footer-left {
-	float: left;
-}
-
-.footer-left table {
-	font-size: 1.1em;
-}
-
-.footer-left table tr {
-	font-size: 1.0em;
-	line-height: 1.5em;
 }
 
 .footer-right {
@@ -268,6 +245,7 @@ body {
 
 .footer-item a {
 	color: #bbb;
+	display: block;
 	text-decoration: none;
 	-webkit-transition: color 0.15s;
 	transition: color 0.15s;
@@ -325,6 +303,15 @@ body {
 	position: absolute;
 	right: 0;
 	top: 0;
+}
+
+#index .swiper-slide-active .slide-img,
+#index .swiper-slide-duplicate-active .slide-img,
+#index .swiper-slide-prev .slide-img {
+	-webkit-animation: zoomUp 8s linear 0s;
+	-webkit-animation-fill-mode: both;
+	animation: zoomUp 8s linear 0s;
+	animation-fill-mode: both;
 }
 
 #index .about {
@@ -505,12 +492,17 @@ body {
 }
 
 #index .sns .iframe-center {
-	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 #index .sns .iframe-center iframe {
-	height: 500px;
-	width: 340px;
+	height: 400px;
+	width: 280px;
 }
 
 #index .sns-title {
@@ -571,7 +563,7 @@ body {
 	background: url("../../src/img/ios-3.jpg") center;
 	background-size: cover;
 	height: 400px;
-	margin: 100px 0;
+	margin: 80px 0;
 	position: relative;
 	width: 100%;
 }
@@ -642,7 +634,6 @@ p {
 
 body {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	min-height: 1200px;
 }
 
 .clearfix:after {
@@ -2164,7 +2155,7 @@ textarea {
 	background: url("../../src/img/ios-3.jpg") center;
 	background-size: cover;
 	height: 400px;
-	margin-top: 100px;
+	margin-top: 80px;
 	position: relative;
 	width: 100%;
 }
@@ -2200,19 +2191,19 @@ textarea {
 
 #company .company-area table tbody tr th {
 	font-size: 1.3em;
-	padding: 40px 10px 20px 10px;
+	padding: 20px 10px 15px;
 	vertical-align: top;
 	width: 33%;
 }
 
 #company .company-area table tbody tr td {
-	padding: 40px 10px 20px 10px;
+	padding: 20px 10px 15px;
 }
 
 #company .company-area table tbody tr td a {
 	color: #00bfff;
 	font-size: 1.1em;
-	line-height: 40px;
+	line-height: 25px;
 }
 
 #company .company-area table tbody tr td a:hover {
@@ -2229,7 +2220,7 @@ textarea {
 	background: url("../../src/img/ios-3.jpg") center;
 	background-size: cover;
 	height: 400px;
-	margin-top: 100px;
+	margin-top: 80px;
 	position: relative;
 	width: 100%;
 }
@@ -2352,7 +2343,7 @@ textarea {
 }
 
 .header-inner {
-	height: 70px;
+	height: 65px;
 	min-width: 0;
 	padding: 10px 15px;
 }
@@ -2360,7 +2351,7 @@ textarea {
 .site-logo {
 	-ms-flex-preferred-size: 0;
 	flex-basis: 0;
-	padding-left: 0;
+	padding: 0;
 }
 
 .site-logo img {
@@ -2523,7 +2514,11 @@ textarea {
 }
 
 #company .company-area table tbody tr th {
-	font-size: 1.0em;
+	font-size: 0.9em;
+}
+
+#company .company-area table tbody tr td {
+	font-size: 0.8em;
 }
 
 #contact .contact-top {
@@ -2581,24 +2576,12 @@ textarea {
 
 .footer-content {
 	height: 200px;
+	padding-top: 25px;
 }
 
 .footer-mask {
 	height: 200px;
 	padding: 0;
-}
-
-.footer-left {
-	float: initial;
-	margin-bottom: 30px;
-}
-
-.footer-left table {
-	margin: 0 auto;
-}
-
-.footer-left table tr {
-	font-size: 0.8em;
 }
 
 .footer-right {
@@ -2660,6 +2643,34 @@ textarea {
 
 #contact .contact-form textarea:focus {
 	border: 2px solid limegreen;
+}
+
+}
+
+@-webkit-keyframes zoomUp {
+
+0% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+100% {
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+}
+
+@keyframes zoomUp {
+
+0% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+100% {
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
 }
 
 }
