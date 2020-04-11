@@ -497,6 +497,13 @@ body {
 	padding: 80px 0;
 }
 
+#index .sns .heading::before {
+	color: #3B5998;
+	content: '\f082';
+	font-family: "Font Awesome 5 Brands";
+	margin: 0 .3em 0 0;
+}
+
 #index .sns .iframe-center {
 	text-align: center;
 }
