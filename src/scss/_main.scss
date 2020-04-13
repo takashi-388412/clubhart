@@ -34,7 +34,7 @@ html {
 }
 body {
   font-family: 'Gotu', sans-serif;
-  letter-spacing: 2px;
+  // letter-spacing: 2px; //serviceで適用されてしまう
   position: relative;
 }
 *,*::before,*::after {
