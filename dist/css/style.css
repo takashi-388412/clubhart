@@ -10,7 +10,6 @@
 
 body {
 	font-family: 'Gotu', sans-serif;
-	letter-spacing: 2px;
 	position: relative;
 }
 
@@ -40,8 +39,9 @@ body {
 
 .heading {
 	color: #000;
-	font-size: 2.5em;
+	font-size: 2.2em;
 	font-weight: bold;
+	letter-spacing: 2px;
 	position: relative;
 	text-align: center;
 }
@@ -219,7 +219,7 @@ body {
 }
 
 .footer-content {
-	background-image: url(../../src/img/building.jpg);
+	background-image: url(../../src/img/building_foreign.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -228,7 +228,7 @@ body {
 }
 
 .footer-mask {
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.9);
 	height: 300px;
 	padding: 50px 50px 0;
 }
@@ -2163,7 +2163,7 @@ textarea {
 }
 
 #company .company-top {
-	background: url("../../src/img/wash_slide.jpg") center;
+	background: url("../../src/img/company-image.jpg") center;
 	background-size: cover;
 	height: 400px;
 	margin-top: 80px;
@@ -2228,7 +2228,7 @@ textarea {
 * -------------------------------------------*/
 
 #contact .contact-top {
-	background: url("../../src/img/wash_slide.jpg") center;
+	background: url("../../src/img/contact-image.jpg") center;
 	background-size: cover;
 	height: 400px;
 	margin-top: 80px;
