@@ -345,16 +345,15 @@ transform : translate(0, 0);
     background-position: center center; //背景画像は中央を軸に表示させる
     @include mq() {
       height: 200px;
-      padding-top: 25px;
     }
   }
   &-mask {
-    background:rgba(0,0,0,0.90);
+    background:rgba(0,0,0,0.8);
     padding: 50px 50px 0;
     height: 300px;
     @include mq() {
       height: 200px;
-      padding: 0;
+      padding: 25px 0 0 0;
     }
   }
   // &-left {
